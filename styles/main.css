@@ -147,18 +147,25 @@ nav ul{
 
 .watermark{
     position: relative;
-    top:-6rem;
+    margin-left: 0.1em;
     font:700 10em Poppins;
     opacity: 0.1;
+
 }
-.stroke-text-watermark {
+/* .stroke-text-watermark {
     position: relative;
     top:-6rem;
     font:700 10em Poppins;
-    color: #fff; /* Text color */
-    outline: 2px solid #000; /* Stroke color and width */
+    color: #fff; /* Text color *//*
+    opacity: 0.1;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000,
+     0    0   1px #000; 
 }
-
+ */
 
 
 /* Journey styles */

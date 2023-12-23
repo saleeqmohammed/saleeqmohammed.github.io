@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .watermark {
+            position: relative;
+            top: -6rem;
+            font: 700 10em Poppins;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+
+        .stroke-text-watermark {
+            position: relative;
+            top: -6rem;
+            font: 700 10em Poppins;
+            color: #fff; /* Text color */
+            opacity: 0.5;
+            text-shadow: 
+                -1px -1px 0 #000,  
+                 1px -1px 0 #000,  
+                -1px  1px 0 #000,  
+                 1px  1px 0 #000,
+                 0    0   1px #000; 
+            transition: opacity 0.5s ease, background-position-x 1s ease; /* Smooth transitions */
+            background: linear-gradient(to right, #000, #000 50%, #fff 50%, #fff); /* Background gradient for filling in from the left */
+            background-size: 200% 100%; /* Double the width to cover the entire element */
+        }
+    </style>
+    <title>Scroll Animation</title>
+</head>
+<body style="height: 300vh;">
+
+    <div class="watermark">Watermark Text</div>
+    <div class="stroke-text-watermark">Stroke Text Watermark</div>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            var watermark = document.querySelector('.watermark');
+            var strokeTextWatermark = document.querySelector('.stroke-text-watermark');
+
+            // Get the scroll position
+            var scrollPosition = window.scrollY;
+
+            // Adjust the opacity based on the scroll position
+            var opacity = Math.min(1, scrollPosition / 500);
+
+            // Set opacity for both elements
+            watermark.style.opacity = opacity;
+            strokeTextWatermark.style.opacity = opacity;
+
+            // Adjust background position to create the filling effect
+            strokeTextWatermark.style.backgroundPositionX = -scrollPosition / 2 + 'px';
+        });
+    </script>
+</body>
+</html>

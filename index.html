@@ -85,7 +85,7 @@
 
 
   <section>
-    <h1 class="stroke-text-watermark">My work</h1>
+    <h1 class="watermark">My work</h1>
     <article class="work-container">
       <h2>
         Freatured
@@ -115,5 +115,39 @@
   </section>
 
   <script src="scripts/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  <script>
+      gsap.registerPlugin(ScrollTrigger)
+      const splitTypes =document.querySelectorAll('.watermark')
+      splitTypes.forEach((char,i)=>{
+          const text = new SplitType(char,{types:'chars'})
+          gsap.from(text.chars,{
+              scrollTrigger:{
+                  trigger:char,
+                  start:'top 80%',
+                  end:'top 20%',
+                  scrub:true,
+                  markers:false
+              },
+              opacity:0,
+              stagger: 0.1
+          })
+      })
+      const lenis = new Lenis()
+
+      lenis.on('scroll', (e) => {
+      console.log(e)
+      })
+
+      function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+      }
+
+      requestAnimationFrame(raf)
+  </script> 
 </body>
 </html>
