@@ -19,7 +19,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
+    min-height: 80vh;
     overflow: hidden;
 }
 
@@ -37,6 +37,30 @@ nav ul{
     line-height: 2rem;
     list-style-type:none;
 }
+
+
+/* Utility styles */
+
+.sliding-button {
+    display: inline-flex;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    padding: 0.6em 1.2em;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, #000 50%, #fff 50%);
+    transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sliding-button:hover {
+    color: #fff;
+    background-position: -100% 0;
+}
+
+
     
 
 /* Hero section styles */
@@ -81,6 +105,7 @@ nav ul{
     display: inline-block;
     
     font:300 1em 'SF Pro Display';
+    padding-bottom: 0.5em;
     
 }
 
@@ -173,25 +198,34 @@ nav ul{
 .journey-table{
     margin-left: auto;
     margin-right: auto;
+    /*border: 1px solid red;*/
 }
 .journey-title-desc{
     padding-left: 0.5em;
     font:700 1rem Poppins;
+    /*border: 1px solid red;*/
 
 }
 .journey-logo{
 align-self: center;
+padding-top: 0.3em;
+height: 1.7em;
+/*border: 1px solid red;*/
+
 }
 
 .line{
+    /*border: 1px solid red;*/
    border-right:1px #000 solid; 
    width: 1em;
+   
   
 }
 .journey-desc{
-    padding-left: 0.5em;
+    padding-left: 1em;
     width: 20em;
     font: 300 1rem Poppins;
+    /*border: 1px solid red;*/
 }
 
 /* work-styles  */
@@ -199,16 +233,24 @@ align-self: center;
 .work-container{
     margin-left: auto;
     margin-right: auto;
-    width: 75vw;
+    width: 66vw;
+}
+.work-filter{
+    font:300 1.2em Poppins;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .work-cards{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
     column-gap: 2em;
 }
 .work-card{
-    height:500px;
+    position: relative;
+    height:12rem;
+    width: 21rem;
     background-size:contain;
     background-repeat: no-repeat;
     background-color: #000;
@@ -216,4 +258,68 @@ align-self: center;
     border-radius: 0.5em;
     
 }
+.work-card-category{
+    font:300 1em Poppins;
+    position: absolute;
+    right: 1em;
+    top:0.5em;
+    text-shadow:0 0 5px #000;
+    opacity: 0.8;
+}
 
+.work-card-title{
+    font:400 1.2em Poppins;
+    position: absolute;
+    left: 1em;
+    bottom:0.5em;
+    text-shadow:0 0 5px #000;
+    
+
+}
+
+.more-btn-container{
+    text-align: center;
+}
+
+.more-btn{
+    background-color: transparent;
+    color: #000;
+    padding: 0.5em 1.2em 0.5em 1.2em ;
+    border:0.1em solid #000;
+    border-radius: 0.25em;
+    -moz-border:0.1em solid #000;
+    -moz-border-radius: 0.25em;
+    margin-top: 3em;
+}
+
+/* Footer styles */
+
+footer{
+    position: relative;
+    background-color: #000;
+    min-height: 20vh;
+}
+.footer-watermark{
+    position: absolute;
+    top: -0.55em;
+    color:#fff;
+    position: relative;
+    margin-left: 0.1em;
+    font:700 10em Poppins;
+    opacity: 0.2;
+
+}
+
+.footer-nav{
+        font:300 1rem Poppins;
+        position:fixed;
+        right: 5vh;
+        top: 5vh;
+        z-index: 10;
+    }
+.footer-nav ul{
+        list-style-position: outside;
+        text-align: center;
+        line-height: 2rem;
+        list-style-type:none;
+    }
