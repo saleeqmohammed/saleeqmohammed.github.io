@@ -11,7 +11,8 @@
     box-sizing:border-box;
 }
 .html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+    
 
 }
 body{
@@ -27,9 +28,10 @@ section{
 nav{
     font:300 1rem Poppins;
     position:fixed;
-    right: 5vh;
+    right: 2.5vw;
     top: 5vh;
     z-index: 10;
+    width: 10vw;
 }
 nav ul{
     list-style-position: outside;
@@ -87,9 +89,15 @@ nav ul{
 }
 .hero-container p{
     margin-top: 0.5em;
-    width: 22rem;
-    font:300 1.5em 'SF Pro Display', sans-serif;
+    width: 30rem;
+    font:300 1.2em 'SF Pro Display', sans-serif;
                                                 
+}
+
+.hero-social{
+    height: 2em;
+    margin-right: 2em;
+    margin-top: 5em;
 }
 .hero-logo{
     display: flex;
@@ -290,6 +298,32 @@ height: 1.7em;
     -moz-border:0.1em solid #000;
     -moz-border-radius: 0.25em;
     margin-top: 3em;
+}
+
+
+/* Literature styles*/
+.literature-container{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2em;
+    margin-left: 15vw;
+    margin-top: 3.5em;
+}
+.literature{
+    position: relative;
+}
+.literature-title{
+    font: 700 1.2em Poppins;
+    margin-bottom: 1em;
+}
+.literature-description{
+    font:300 0.8em Poppins;
+}
+.literature-download{
+    position: absolute;
+    right: 0;
 }
 
 /* Footer styles */

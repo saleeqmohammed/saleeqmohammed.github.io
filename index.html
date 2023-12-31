@@ -10,18 +10,18 @@
   <header>
     <nav>
       <ul>
-        <li>Home</li>
+        <li><a href="#home">Home</a></li>
         <li>About</li>
-        <li style="font-weight: 700;">Journey</li>
+        <li><a href="#journey"> Journey</a></li>
         <li>Work</li>
-        <li>Let's talk</li>
+        <li><a href="#footer"> Let's talk</a></li>
       </li>
       </ul>
     </nav>
   </header>
+  <main>
 
-
-    <section>
+    <section class="section" id="home">
       <div class="hero-container">
         <div class="hero-logo">
           <a style="text-decoration: none;" href="https://bitly.ws/35Vnu">
@@ -33,6 +33,14 @@
           SALEEQ
         </h1>
         <p>A Robotics and AI engineer with some serious passion and skills in web development and MLOps.</p>
+        <div class="hero-social-container">
+          <img class="hero-social" src="icons/github-dark.svg" alt="">
+          <img class="hero-social" src="icons/linkedin-dark.svg" alt="">
+          <img class="hero-social" src="icons/facebook-dark.svg" alt="">
+          <img class="hero-social" src="icons/square-x-twitter-dark.svg" alt="">
+          <img class="hero-social" src="icons/square-instagram-dark.svg" alt="">
+          <img class="hero-social" src="icons/gmail-dark.svg" alt="">
+        </div>
       </div>
     <div class="circle">
       <div class="text">
@@ -44,7 +52,7 @@
   
   <!--Work section-->
 
-  <section>
+  <section class="section" id="work">
     <h1 class="watermark">My work</h1>
     <article class="work-container">
       <h2 class="work-filter">
@@ -95,7 +103,7 @@
 
 <!--Journey section-->
 
-  <section>
+  <section id="journey" class="section">
     <h1 class="watermark">Journey</h1>
     <table class="journey-table">
 
@@ -152,22 +160,35 @@
 
 
 
-  <section>
+  <section id="literature" class="section">
     <h1 class="watermark">
       Literature
     </h1>
     <article class="literature-container">
-      <div class="article">
-        <h3 class="article-title"></h3>
+      <div class="literature">
+        <h3 class="literature-title">01 Analytical WAAM</h3>
+        <p class="literature-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+        <a href =""> <img src="icons/download_black.svg" alt="download button" class="literature-download"></a>
+      </div>
+      <div class="literature">
+        <h3 class="literature-title">02 Analytical WAAM</h3>
+        <p class="literature-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+        <a href =""> <img src="icons/download_black.svg" alt="download button" class="literature-download"></a>
+      </div>
+      <div class="literature">
+        <h3 class="literature-title">03 Analytical WAAM</h3>
+        <p  class="literature-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+        <a href =""> <img src="icons/download_black.svg" alt="download button" class="literature-download"></a>
       </div>
     </article>
   </section>
 
 
+</main>
 
-
-  <footer>
+  <footer id="footer">
     <h1 class="footer-watermark">Contacts</h1>
+    <div class="socialmedia-container"></div>
   </footer>
 
 
