@@ -14,6 +14,7 @@
         <li ><a class="navlink" href="#work">Work</a></li>
         <li ><a class="navlink" href="#journey"> Journey</a></li>
         <li ><a class="navlink" href="#literature">Literature</a></li>
+        <li ><a class="navlink" href="#talk">Talk</a></li>
 
         <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
       </li>
@@ -45,7 +46,7 @@
       </div>
     <div class="circle">
       <div class="text">
-        <p>Scroll to - work - About - Journey - talk - </p>
+        <p>Scroll to- W ork - Journey - Lit. - Talk - </p>
       </div>
       <img src="icons/arrow.svg" alt="arrow pointing down" class="arrow_down">
     </div>
@@ -84,7 +85,10 @@
         </div>
       </div>
     </article>
+    <div class="more-btn-container">
 
+      <button class="more-btn">explore all</button>
+    </div>
   </section>
 
 
@@ -134,7 +138,7 @@
         <td class="journey-title-desc" colspan="3">B.Tech Mechanical Engineering</td>
       </tr>
       <tr>
-        <td class="line">&nbsp;</td><td >&nbsp;</td><td class="journey-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fugiat. Perspiciatis odio delectus nemo sit sint soluta.</td>
+        <td>&nbsp;</td><td >&nbsp;</td><td class="journey-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fugiat. Perspiciatis odio delectus nemo sit sint soluta.</td>
       </tr>
 
 
@@ -169,7 +173,13 @@
       </div>
     </article>
   </section>
-
+  <section class="section" id="talk">
+    <h2 class="watermark">Talk</h2>
+    <div class="talk-container">
+      <p class="talk-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis adipisci inventore beatae autem rem quibusdam optio magni, nihil maxime culpa neque minima sed enim eos qui porro corporis esse amet.</p>
+      <img class="talk-img" src="images/mee.jpeg">
+    </div>
+  </section>
 
 </main>
 
@@ -181,6 +191,8 @@
       <li ><a href="#work">Work</a></li>
       <li ><a href="#journey"> Journey</a></li>
       <li ><a href="#literature">Literature</a></li>
+      
+
 
       <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
     </li>
@@ -217,5 +229,23 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger)
+    const splitTypes =document.querySelectorAll('.watermark')
+    splitTypes.forEach((char,i)=>{
+        const text = new SplitType(char,{types:'chars'})
+        gsap.from(text.chars,{
+            scrollTrigger:{
+                trigger:char,
+                start:'top 80%',
+                end:'top 20%',
+                scrub:true,
+                markers:false
+            },
+            opacity:0,
+            stagger: 0.1
+        })
+    })
+  </script>
 </body>
 </html>

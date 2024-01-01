@@ -188,6 +188,7 @@ nav ul li a{
     margin-left: 0.1em;
     font:700 10em Poppins;
     opacity: 0.1;
+    margin-bottom: 5rem;
 
 }
 /* .stroke-text-watermark {
@@ -211,12 +212,15 @@ nav ul li a{
 .journey-table{
     margin-left: auto;
     margin-right: auto;
+    
     /*border: 1px solid red;*/
 }
 .journey-title-desc{
     padding-left: 0.5em;
     font:700 1rem Poppins;
     /*border: 1px solid red;*/
+    
+    
 
 }
 .journey-logo{
@@ -232,13 +236,16 @@ height: 1.7em;
    border-right:1px #000 solid; 
    width: 1em;
    
+
   
 }
 .journey-desc{
     padding-left: 1em;
     width: 20em;
-    font: 300 1rem Poppins;
+    font: 300 0.8rem Poppins;
     /*border: 1px solid red;*/
+    padding-bottom: 4rem;
+    
 }
 
 /* work-styles  */
@@ -277,7 +284,7 @@ height: 1.7em;
     width:30vw;
 }
 .work-description{
-    font:300 1em 'SF Pro Display'
+    font:300 1em Poppins;
 }
 
 .read-more-work{
@@ -292,6 +299,7 @@ height: 1.7em;
 }
 
 .more-btn-container{
+    margin-top: 2rem;
     text-align: center;
 }
 
@@ -304,6 +312,15 @@ height: 1.7em;
     -moz-border:0.1em solid #000;
     -moz-border-radius: 0.25em;
     margin-top: 3em;
+    display: inline-flex;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, #000 50%, #fff 50%);
+    transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.more-btn:hover {
+    color: #ffffff;
+    background-position: -100% 0;
 }
 
 
@@ -315,7 +332,7 @@ height: 1.7em;
     row-gap: 2rem;
     column-gap: 2em;
     margin-left: 15vw;
-    margin-top: 3.5em;
+   
 }
 .literature{
     position: relative;
@@ -329,15 +346,32 @@ height: 1.7em;
 }
 .literature-download{
     position: absolute;
-    right: 0;
+    right: 1.2rem;
 }
 
+
+
+/*Talk styles*/
+.talk-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+    width: 70vw;
+    margin: 0 auto 6rem auto;
+}
+.talk-para{
+    font:300 0.8rem Poppins;
+}
+.talk-img{
+    width: 25vw;
+    
+}
 /* Footer styles */
 
 footer{
     position: relative;
     background-color: #000;
-    min-height: 20vh;
+    min-height: 40vh;
 }
 .footer-watermark{
     position: absolute;
@@ -371,13 +405,14 @@ footer{
 
 .footer-social-container{
     position: absolute;
-    top: 4rem;
+    top: 9rem;
     left: 25vw;
     width: 50vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 1.2rem;
     column-gap: 2rem;
+
 }
 .social-item{
     display: flex;
@@ -397,7 +432,7 @@ footer{
 
 .footer-copyright{
     position: absolute;
-    top: 12rem;
+    top: 15rem;
     margin-left:33vw;
     margin-bottom: 5rem;
     color: #fff;
@@ -406,7 +441,7 @@ footer{
 }
 .footer-sep{
     position: absolute;
-    top: 11.4rem;
+    top: 14.4rem;
     left: 28vw;
     color: #fff;
     width: 40vw;
