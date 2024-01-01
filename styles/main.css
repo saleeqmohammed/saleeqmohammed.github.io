@@ -10,8 +10,8 @@
     padding:0;
     box-sizing:border-box;
 }
-.html{
-    scroll-behavior: smooth !important;
+html{
+    scroll-behavior: smooth;
     
 
 }
@@ -40,7 +40,14 @@ nav ul{
     list-style-type:none;
 }
 
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
 
+.active-nav{
+    font-weight: 700;
+}
 /* Utility styles */
 
 .sliding-button {
@@ -95,7 +102,7 @@ nav ul{
 }
 
 .hero-social{
-    height: 2em;
+    height: 1.5em;
     margin-right: 2em;
     margin-top: 5em;
 }
@@ -127,7 +134,7 @@ nav ul{
 
 .circle{
     float: right;
-    margin-right: 6.5rem;
+    margin-right: 13vw;
     font-family: 'SF Pro Display';
     position:  relative;
     width: 10rem;
@@ -346,7 +353,7 @@ footer{
 
 .footer-nav{
         font:300 1rem Poppins;
-        position:fixed;
+        position:absolute;
         right: 5vh;
         top: 5vh;
         z-index: 10;
@@ -357,3 +364,61 @@ footer{
         line-height: 2rem;
         list-style-type:none;
     }
+.footer-nav ul li a{
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.footer-social-container{
+    position: absolute;
+    top: 4rem;
+    left: 25vw;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1.2rem;
+    column-gap: 2rem;
+}
+.social-item{
+    display: flex;
+    align-items: center;
+}
+.footer-social-ico{
+    display: inline-block;
+    height: 1.2em;
+
+}
+.footer-social-desc{
+    display: inline-block;
+    color:#fff;
+    font:300 0.8em Poppins;
+    margin-left: 1em;
+}
+
+.footer-copyright{
+    position: absolute;
+    top: 12rem;
+    margin-left:33vw;
+    margin-bottom: 5rem;
+    color: #fff;
+    opacity: 0.6;
+    font: 300 0.8rem Poppins;
+}
+.footer-sep{
+    position: absolute;
+    top: 11.4rem;
+    left: 28vw;
+    color: #fff;
+    width: 40vw;
+    opacity: 0.6;
+}
+
+.shoutout{
+    color: #fff;
+    background-color: #2c2c2c;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+
+}

@@ -10,11 +10,12 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li>About</li>
-        <li><a href="#journey"> Journey</a></li>
-        <li>Work</li>
-        <li><a href="#footer"> Let's talk</a></li>
+        <li ><a class="navlink active-nav" href="#home">Home</a></li>
+        <li ><a class="navlink" href="#work">Work</a></li>
+        <li ><a class="navlink" href="#journey"> Journey</a></li>
+        <li ><a class="navlink" href="#literature">Literature</a></li>
+
+        <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
       </li>
       </ul>
     </nav>
@@ -36,7 +37,7 @@
         <div class="hero-social-container">
           <img class="hero-social" src="icons/github-dark.svg" alt="">
           <img class="hero-social" src="icons/linkedin-dark.svg" alt="">
-          <img class="hero-social" src="icons/facebook-dark.svg" alt="">
+          <img class="hero-social" src="icons/youtube-dark.svg" alt="">
           <img class="hero-social" src="icons/square-x-twitter-dark.svg" alt="">
           <img class="hero-social" src="icons/square-instagram-dark.svg" alt="">
           <img class="hero-social" src="icons/gmail-dark.svg" alt="">
@@ -58,7 +59,10 @@
       <h2 class="work-filter">
         Freatured
       </h2>
+
       <div class="work-cards">
+
+
         <div class="work-card" style="background-image: url(images/robot_placeholder.webp);">
           <p class="work-card-category">
             /Robotics
@@ -66,7 +70,10 @@
           <p class="work-card-title">
             AMC Localization
           </p>
+
         </div>
+
+
         <div class="work-card" style="background-image: url(images/Web-App-Trends-Banner-Image.webp);">
           <p class="work-card-category">
             /Web
@@ -75,6 +82,8 @@
             Finance tracker
           </p>
         </div>
+
+
         <div class="work-card" style="background-image: url(images/Web-App-stress.webp);">
           <p class="work-card-category">
             /MLOps
@@ -83,6 +92,8 @@
             Fatigue Life estimation
           </p>
         </div>
+
+
         <div class="work-card" style="background-image: url(images/divi-web-developer-layout-pack-featured-image.webp);">
           <p class="work-card-category">/Web</p>
           <p class="work-card-title">
@@ -188,7 +199,39 @@
 
   <footer id="footer">
     <h1 class="footer-watermark">Contacts</h1>
-    <div class="socialmedia-container"></div>
+    <div class="footer-nav">
+    <ul >
+      <li ><a href="#home">Home</a></li>
+      <li ><a href="#work">Work</a></li>
+      <li ><a href="#journey"> Journey</a></li>
+      <li ><a href="#literature">Literature</a></li>
+
+      <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
+    </li>
+    </ul>
+    </div>
+    <div class="footer-social-container">
+      <div class="social-item">
+        <img src="icons/github-light.svg" alt="github" class="footer-social-ico"><p class="footer-social-desc">github/saleeq</p>
+      </div>
+      <div class="social-item">
+        <img src="icons/linkedin-light.svg" alt="github" class="footer-social-ico"><p class="footer-social-desc">LinkedIn/saleeq</p>
+      </div>
+      <div class="social-item">
+        <img src="icons/youtube-light.svg" alt="github" class="footer-social-ico"><p class="footer-social-desc">YouTube/saleeq</p>
+      </div>
+      <div class="social-item">
+        <img src="icons/square-x-twitter-light.svg" alt="github" class="footer-social-ico"><p class="footer-social-desc">twitter/saleeq</p>
+      </div>
+      <div class="social-item">
+        <img src="icons/square-instagram.svg" alt="github" class="footer-social-ico"><p class="footer-social-desc">github/saleeq</p>
+      </div>
+      <div class="social-item">
+        <img src="icons/gmail-light.svg" alt="github" class="footer-social-ico"><p class="footer-social-desc">gmail/saleeq</p>
+      </div>
+    </div>
+    <hr size="0.1rem" class="footer-sep">
+    <p class="footer-copyright">&copy; Developed by Saleeq and design insights from <a href="#" class="shoutout">@Hisham</p>
   </footer>
 
 
@@ -215,7 +258,8 @@
               stagger: 0.1
           })
       })
-      const lenis = new Lenis()
+/* 
+       const lenis = new Lenis()
 
       lenis.on('scroll', (e) => {
       console.log(e)
@@ -226,7 +270,9 @@
       requestAnimationFrame(raf)
       }
 
-      requestAnimationFrame(raf)
+      requestAnimationFrame(raf)  */
+      
+
   </script> 
 </body>
 </html>
