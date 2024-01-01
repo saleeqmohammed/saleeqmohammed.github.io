@@ -316,6 +316,8 @@ height: 1.7em;
     background-size: 200% 100%;
     background-image: linear-gradient(to left, #000 50%, #fff 50%);
     transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    
 }
 
 .more-btn:hover {
