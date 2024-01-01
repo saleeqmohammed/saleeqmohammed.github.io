@@ -56,56 +56,32 @@
   <section class="section" id="work">
     <h1 class="watermark">My work</h1>
     <article class="work-container">
-      <h2 class="work-filter">
-        Freatured
-      </h2>
-
-      <div class="work-cards">
-
-
-        <div class="work-card" style="background-image: url(images/robot_placeholder.webp);">
-          <p class="work-card-category">
-            /Robotics
-          </p>
-          <p class="work-card-title">
-            AMC Localization
-          </p>
+      <h2 class="work-title"><span class="work-n">01</span>AMC Localization</h2>
+      <div class="work-content">
+        <div class="image-container">
+          <img src="images/bot_localization.jpg" alt="" class="work-img">
 
         </div>
+        <div class="details-container">
 
-
-        <div class="work-card" style="background-image: url(images/Web-App-Trends-Banner-Image.webp);">
-          <p class="work-card-category">
-            /Web
-          </p>
-          <p class="work-card-title">
-            Finance tracker
-          </p>
+          <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam, at deleniti placeat quas nam ipsam hic tenetur laudantium vel non aliquam, eum suscipit laboriosam. Ad officiis, voluptate maiores enim odio quae dolorem eius amet ipsa exercitationem quasi nisi labore dolore id molestiae eum expedita.</p>
+          <a href="#" class="read-more-work">Read more... </a>
+          <button class="demo-btn sliding-button">Demo</button>
         </div>
-
-
-        <div class="work-card" style="background-image: url(images/Web-App-stress.webp);">
-          <p class="work-card-category">
-            /MLOps
-          </p>
-          <p class="work-card-title">
-            Fatigue Life estimation
-          </p>
-        </div>
-
-
-        <div class="work-card" style="background-image: url(images/divi-web-developer-layout-pack-featured-image.webp);">
-          <p class="work-card-category">/Web</p>
-          <p class="work-card-title">
-            Client ABC website
-          </p>
-        </div>
-       
       </div>
-      <div class="more-btn-container">
 
-      <button class="sliding-button">explore all</button>
+      <h2 class="work-title"><span class="work-n">02</span>Finance Tracker</h2>
+      <div class="work-content">
+        <div class="details-container">
 
+          <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam, at deleniti placeat quas nam ipsam hic tenetur laudantium vel non aliquam, eum suscipit laboriosam. Ad officiis, voluptate maiores enim odio quae dolorem eius amet ipsa exercitationem quasi nisi labore dolore id molestiae eum expedita.</p>
+          <a href="#" class="read-more-work">Read more... </a>
+          <button class="demo-btn sliding-button">Demo</button>
+        </div>
+        <div class="image-container">
+          <img src="images/Web-App-Trends-Banner-Image.webp" alt="" class="work-img">
+
+        </div>
       </div>
     </article>
 
@@ -241,38 +217,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://unpkg.com/split-type"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
-  <script>
-      gsap.registerPlugin(ScrollTrigger)
-      const splitTypes =document.querySelectorAll('.watermark')
-      splitTypes.forEach((char,i)=>{
-          const text = new SplitType(char,{types:'chars'})
-          gsap.from(text.chars,{
-              scrollTrigger:{
-                  trigger:char,
-                  start:'top 80%',
-                  end:'top 20%',
-                  scrub:true,
-                  markers:false
-              },
-              opacity:0,
-              stagger: 0.1
-          })
-      })
-/* 
-       const lenis = new Lenis()
-
-      lenis.on('scroll', (e) => {
-      console.log(e)
-      })
-
-      function raf(time) {
-      lenis.raf(time)
-      requestAnimationFrame(raf)
-      }
-
-      requestAnimationFrame(raf)  */
-      
-
-  </script> 
 </body>
 </html>

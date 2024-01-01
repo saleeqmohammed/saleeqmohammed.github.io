@@ -12,7 +12,6 @@
 }
 html{
     scroll-behavior: smooth;
-    
 
 }
 body{
@@ -52,20 +51,19 @@ nav ul li a{
 
 .sliding-button {
     display: inline-flex;
-    border-radius: 0.5em;
-    border: 1px solid black;
+    border-radius: 0.3em;
+    border: 0.1rem solid black;
     padding: 0.6em 1.2em;
-    margin: 1em;
     align-items: center;
     justify-content: center;
-    color: #000;
+    color: #fff;
     background-size: 200% 100%;
-    background-image: linear-gradient(to left, #000 50%, #fff 50%);
+    background-image: linear-gradient(to left, #ffffff 50%, #000000 50%);
     transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .sliding-button:hover {
-    color: #fff;
+    color: #000;
     background-position: -100% 0;
 }
 
@@ -246,50 +244,51 @@ height: 1.7em;
 /* work-styles  */
 
 .work-container{
+
     margin-left: auto;
     margin-right: auto;
     width: 66vw;
-}
-.work-filter{
-    font:300 1.2em Poppins;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-.work-cards{
     
+}
+.work-title{
+    font:700 2em Poppins;
+    margin-bottom: 0.8em;
+    margin-top: 1em;
+}
+.work-n{
+    color: #fff; /* Text color */
+    opacity: 0.8;
+    text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,  
+    -1px  1px 0 #000,  
+     1px  1px 0 #000,
+     0    0   1px #000; 
+    margin-right: 0.3em;
+}
+.work-content{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-    column-gap: 2em;
-}
-.work-card{
-    position: relative;
-    height:12rem;
-    width: 21rem;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-color: #000;
-    color: white;
-    border-radius: 0.5em;
-    
-}
-.work-card-category{
-    font:300 1em Poppins;
-    position: absolute;
-    right: 1em;
-    top:0.5em;
-    text-shadow:0 0 5px #000;
-    opacity: 0.8;
+    column-gap: 1em;
 }
 
-.work-card-title{
-    font:400 1.2em Poppins;
-    position: absolute;
-    left: 1em;
-    bottom:0.5em;
-    text-shadow:0 0 5px #000;
-    
+.work-img{
+    width:30vw;
+}
+.work-description{
+    font:300 1em 'SF Pro Display'
+}
 
+.read-more-work{
+    font:300 0.8em Poppins;
+    text-decoration: underline;
+    margin-right: 2em;
+    color: #2c2c2c;
+}
+
+.demo-btn{
+    margin-top: 1em;
 }
 
 .more-btn-container{
