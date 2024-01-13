@@ -16,6 +16,7 @@ html{
 }
 body{
     font-family: 'Times New Roman', Times, serif;
+    
 }
 
 section{
@@ -25,12 +26,14 @@ section{
 
 /* Navbar styles */
 nav{
+    
     font:300 1rem Poppins;
     position:fixed;
     right: 2.5vw;
     top: 5vh;
     z-index: 10;
     width: 10vw;
+   
 }
 nav ul{
     list-style-position: outside;
@@ -47,19 +50,28 @@ nav ul li a{
 .active-nav{
     font-weight: 700;
 }
+
+.open-menu ,.close-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu-check{
+    display: none;
+}
 /* Utility styles */
 
 .sliding-button {
     display: inline-flex;
     border-radius: 0.3em;
-    border: 0.1rem solid black;
-    padding: 0.6em 1.2em;
+    border: 0.05rem solid black;
+    padding: 0.4em 1.2em;
     align-items: center;
     justify-content: center;
     color: #fff;
     background-size: 200% 100%;
     background-image: linear-gradient(to left, #ffffff 50%, #000000 50%);
-    transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: background-position 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .sliding-button:hover {
@@ -94,7 +106,7 @@ nav ul li a{
 }
 .hero-container p{
     margin-top: 0.5em;
-    width: 30rem;
+    width: 30vw;
     font:300 1.2em 'SF Pro Display', sans-serif;
                                                 
 }
@@ -224,9 +236,10 @@ nav ul li a{
 
 }
 .journey-logo{
-align-self: center;
+
 padding-top: 0.3em;
 height: 1.7em;
+padding-left: 0.16rem;
 /*border: 1px solid red;*/
 
 }
@@ -296,6 +309,7 @@ height: 1.7em;
 
 .demo-btn{
     margin-top: 1em;
+    font:300 0.6em Poppins;
 }
 
 .more-btn-container{
@@ -328,12 +342,12 @@ height: 1.7em;
 
 /* Literature styles*/
 .literature-container{
-    width: 70vw;
+    width: 50vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 2rem;
     column-gap: 2em;
-    margin-left: 15vw;
+    margin-left: 25vw;
    
 }
 .literature{
@@ -374,6 +388,7 @@ footer{
     position: relative;
     background-color: #000;
     min-height: 40vh;
+    overflow:hidden;
 }
 .footer-watermark{
     position: absolute;
