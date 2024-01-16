@@ -5,34 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Saleeq Kolleth</title>
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+
   <header>
     <nav>
       <ul>
         <input type="checkbox" name="menu-check" id="menu-check">
         <span class="menu">
 
-          <li ><a class="navlink active-nav" href="#home">Home</a></li>
-          <li ><a class="navlink" href="#work">Work</a></li>
-          <li ><a class="navlink" href="#journey"> Journey</a></li>
-          <li ><a class="navlink" href="#literature">Literature</a></li>
-          <li ><a class="navlink" href="#talk">Talk</a></li>
-          <label for="menu-check" class="close-menu"><img src="icons/xmark-solid.svg" alt="close menu"> </label>
+          <li ><a class="navlink active-nav" href="#home" onclick="menuClose()">Home</a></li>
+          <li ><a class="navlink" href="#work" onclick="menuClose()">Work</a></li>
+          <li ><a class="navlink" href="#journey" onclick="menuClose()"> Journey</a></li>
+          <li ><a class="navlink" href="#literature" onclick="menuClose()">Literature</a></li>
+          <li ><a class="navlink" href="#talk" onclick="menuClose()">Talk</a></li>
         </span>
-        <label for="menu-check" class="open-menu"><img src="icons/bars-solid.svg" alt="hamburger menu"></label>
+        <label for="menu-check" class="open-menu">
+          <!-- <img class="menu-handle" src="icons/bars-solid.svg" alt="hamburger menu"> -->
+          <span class="material-symbols-outlined">
+            menu
+            </span>
+        </label>
+        <label for="menu-check" class="close-menu">
+          <span class="material-symbols-outlined">close</span>
+          <!-- <img class="menu-handle"  src="icons/xmark-solid.svg" alt="close menu"> -->
+         </label>
         <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
       </li>
       </ul>
     </nav>
   </header>
+  <div class="blur-background"></div>
   <main>
 
     <section class="section" id="home">
       <div class="hero-container">
         <div class="hero-logo">
           <a style="text-decoration: none;" href="https://bitly.ws/35Vnu">
-          <img src="icons/barcode.svg"></a><img src="icons/arrow.svg" alt="arrow pointing left"><p class="img-info">Click/Scan for resume.</p>
+          <img class="barcode-img" src="icons/barcode.svg"></a><img id="barcode-arrow" src="icons/arrow.svg" alt="arrow pointing left"><p class="img-info">Click/Scan for resume.</p>
           
         </div>
         <h2>Hi, I'm</h2>
