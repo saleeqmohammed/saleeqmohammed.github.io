@@ -1,6 +1,6 @@
 /*Import fonts*/
 
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98773,98770');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
@@ -25,7 +25,8 @@ body{
   'FILL' 0,
   'wght' 300,
   'GRAD' 0,
-  'opsz' 24
+  'opsz' 24;
+
 }
 
 
@@ -50,15 +51,23 @@ body{
 section{
     min-height: 80vh;
     overflow: hidden;
+
 }
 
+/* Responsive section syles */
+@media(max-width:780px){
+    section{
+        margin-bottom: 8rem;
+        position: relative;
+    }
+}
 /* Navbar styles */
 nav{
     
     font:300 1rem Poppins;
     position:fixed;
     right: 2.5vw;
-    top: 5vh;
+    top: 5rem;
     z-index: 10;
     width: 10vw;
    
@@ -81,7 +90,7 @@ nav ul li a{
 
 .open-menu ,.close-menu{
     position: absolute;
-    top: 0;
+    top: -2.5rem;
     right: 3vw;
     display: none;
 }
@@ -158,7 +167,7 @@ nav ul li a{
 .hero-container p{
     margin-top: 0.5em;
     width: 30vw;
-    font:300 1.2em 'SF Pro Display', sans-serif;
+    font:100 1.2em 'SF Pro Display', sans-serif;
                                                 
 }
 
@@ -205,8 +214,17 @@ nav ul li a{
     .hero-logo{
         top: -4vh;
     }
+    
+    .hero-container{
+        /* top right bottom left*/
+        margin-top: 5rem auto auto auto auto;
+    }
+    .hero-container h1{
+        font: 700 20vw 'Poppins';
+    }
     .hero-container p{
         width: 80vw;
+        font:400 1.2rem 'SF Pro Display',sans-serif;
     }
 }
 
@@ -297,6 +315,16 @@ nav ul li a{
 
 /* Watermark style in responsive */
 
+@media(max-width:780px) {
+    .watermark{
+        position: absolute;
+        transform:rotate(-90deg);
+        left: -60vw;
+        font:700 30vw Poppins;
+        top:60vw;
+    }
+    
+}
 /* .stroke-text-watermark {
     position: relative;
     top:-6rem;

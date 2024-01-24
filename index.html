@@ -23,12 +23,12 @@
         </span>
         <label for="menu-check" class="open-menu">
           <!-- <img class="menu-handle" src="icons/bars-solid.svg" alt="hamburger menu"> -->
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined ">
             menu
             </span>
         </label>
         <label for="menu-check" class="close-menu">
-          <span class="material-symbols-outlined">close</span>
+          <span class="material-symbols-outlined ">close</span>
           <!-- <img class="menu-handle"  src="icons/xmark-solid.svg" alt="close menu"> -->
          </label>
         <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
@@ -250,7 +250,14 @@
     const splitTypes =document.querySelectorAll('.watermark')
     splitTypes.forEach((char,i)=>{
         const text = new SplitType(char,{types:'chars'})
-        gsap.from(text.chars,{
+        let charsForAnim = text.chars;
+        let mediaQuery = window.matchMedia('(max-width: 780px)');
+        if (mediaQuery.matches){
+
+          charsForAnim.reverse()
+          // console.log(mediaQuery.matches);
+        }
+        gsap.from(charsForAnim,{
             scrollTrigger:{
                 trigger:char,
                 start:'top 80%',
