@@ -11,7 +11,7 @@ let activeSection = 'home';
 window.addEventListener('scroll',()=>{
 
   sections.forEach(element => {
-    if(window.scrollY >= (element.offsetTop-element.clientHeight/2)){
+    if(window.scrollY >= (element.offsetTop-element.clientHeight/8)){
       activeSection = element.id
     }
   });

@@ -167,7 +167,9 @@ nav ul li a{
 .hero-container p{
     margin-top: 0.5em;
     width: 30vw;
-    font:100 1.2em 'SF Pro Display', sans-serif;
+    font:400 1.1rem 'SF Pro Display',sans-serif;
+    text-align: left;
+    padding-left: 0.05rem;
                                                 
 }
 
@@ -223,8 +225,10 @@ nav ul li a{
         font: 700 20vw 'Poppins';
     }
     .hero-container p{
-        width: 80vw;
-        font:400 1.2rem 'SF Pro Display',sans-serif;
+        width: 75vw;
+        font:400 1.1rem 'SF Pro Display',sans-serif;
+        text-align: left;
+        padding-left: 0.05rem;
     }
 }
 
@@ -235,7 +239,8 @@ nav ul li a{
 
 .circle{
     float: right;
-    margin-right: 13vw;
+    margin-top: 3vh;
+    margin-right: 10vw;
     font-family: 'SF Pro Display';
     position:  relative;
     width: 10rem;
@@ -301,7 +306,7 @@ nav ul li a{
     position: relative;
     margin-left: 0.1em;
     font:700 10vw Poppins;
-    opacity: 0.3;
+    opacity: 0.6;
     margin-bottom: 5rem;
     text-shadow: 
     -1px -1px 0 #000,  
@@ -390,12 +395,19 @@ padding-left: 0.16rem;
     margin-left: auto;
     margin-right: auto;
     width: 66vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
     
 }
-.work-title{
+.work-title:nth-child(n){
     font:700 2em Poppins;
     margin-bottom: 0.8em;
     margin-top: 1em;
+    grid-column: 1/ span 2;
+    grid-row:2n+1/ span 1;
+    order: n;
 }
 .work-n{
     color: #fff; /* Text color */
@@ -408,13 +420,23 @@ padding-left: 0.16rem;
      0    0   1px #000; 
     margin-right: 0.3em;
 }
-.work-content{
+/* .work-content{
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
-}
+} */
 
+.image-container:nth-of-type(2n+1){
+    background-color: bisque;
+    grid-column: 1/ span 1;
+    grid-row: 2n/ span 1;
+}
+.image-container:nth-of-type(2n){
+    background-color:rebeccapurple;
+    grid-column: 2/ span 1;
+    grid-row: 2n/ span 1;
+}
 .work-img{
     width:30vw;
 }
@@ -529,6 +551,7 @@ footer{
         right: 5vh;
         top: 5vh;
         z-index: 10;
+        display: none;
     }
 .footer-nav ul{
         list-style-position: outside;
