@@ -116,7 +116,7 @@ body{
   }
 
 section{
-    min-height: 85vh;
+    min-height: 50vh;
     overflow: hidden;
 }
 
@@ -224,6 +224,7 @@ nav ul li a{
     opacity: 0.2;
     margin-top: 5rem;
     
+    
                                                
 }
 .hero-container h1{     
@@ -272,7 +273,7 @@ nav ul li a{
 /*Hero responsive code */
 @media(max-width:780px){
     .hero-container{
-        margin: 5rem auto auto 2.5rem;
+        margin: 5rem auto 25vw 2.5rem;
     }
     #barcode-arrow{
         display: none;
@@ -449,6 +450,17 @@ padding-left: 0.16rem;
     
 }
 
+/* Responsive journey */
+@media(max-width:780px){
+ .journey-table{
+    margin-right: 8vw;
+ }
+ .journey-desc{
+    width: 55vw;
+    padding-bottom: 3rem;
+    
+ }
+}
 /* work-styles  */
 
 .work-container{
@@ -509,7 +521,7 @@ padding-left: 0.16rem;
     width:30vw;
 }
 .work-description{
-    font:300 1em Poppins;
+    font:300 0.8em Poppins;
 }
 
 .read-more-work{
@@ -523,12 +535,15 @@ padding-left: 0.16rem;
     margin-top: 1em;
     font:300 0.6em Poppins;
 }
+.demo-btn:hover{
+    color: rebeccapurple;
+}
 
 .more-btn-container{
-    /* position: relative; */
+    position: relative;
     margin-top: 2rem;
     text-align: center;
-    left: 42.5vw;
+    /* left: 42.5vw; */
 }
 
 .more-btn{
@@ -544,10 +559,8 @@ padding-left: 0.16rem;
     background-size: 200% 100%;
     background-image: linear-gradient(to left, #000 50%, #fff 50%);
     transition: background-position 0.3s ease-in-out, color 0.3s ease-in-out;
-    width: 15vw;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    
+
 
     
 }
@@ -566,8 +579,8 @@ padding-left: 0.16rem;
         display: flex;
         gap:10vw;
         overflow-x: hidden;
-        top:0;
-        margin-left: 25vw;
+        margin-top: 10vw;
+        margin-left: 28vw;
         width: 70vw;
         
     }
@@ -581,6 +594,9 @@ padding-left: 0.16rem;
         flex-wrap: nowrap;
         animation: slide 8s linear infinite;
         animation-timing-function: ease-in-out;
+    }
+    .work-content:nth-of-type(odd):hover,.work-content:nth-of-type(even):hover{
+        animation: none;
     }
     .work-img{
         height:40vw;
@@ -599,15 +615,7 @@ padding-left: 0.16rem;
         display: block;
         align-self: flex-start;
     }
-    .more-btn-container{
-        /* position: absolute; */
-        top :90vw;
-        left: 35vw;
-        
-    }
-    .more-btn{
-        width: 30vw;
-    }
+
 
     
 
@@ -623,7 +631,9 @@ padding-left: 0.16rem;
     column-gap: 2em;
     margin-left: auto;
     margin-right: auto;
-   
+    
+    padding-bottom: 15vh;
+
 }
 .literature{
     position: relative;
@@ -649,7 +659,7 @@ padding-left: 0.16rem;
         width: 80vw;
         column-gap: 1vw;
         overflow-x: hidden;
-        margin-top: 15vh;
+        margin-top: 18vh;
         margin-left: 28vw;
 
         
@@ -680,6 +690,7 @@ padding-left: 0.16rem;
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10vw;
 }
 .talk-para{
     font:300 0.8rem Poppins;
@@ -695,6 +706,7 @@ padding-left: 0.16rem;
         position: relative;
         flex-direction: column-reverse;
         margin-right: 2rem;
+        margin-bottom: 0;
     }
     .talk-img{
         width: 70vw;

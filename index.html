@@ -289,22 +289,41 @@
 lines.forEach((line, j) => {
     gsap.from(line, { 
         opacity: 0,
-        stagger: 0.1,
+        stagger: 0.1 ,
         rotateX: 90,
         transformOrigin: "50% 0%",
         scrollTrigger: {
             trigger: line, // Use line as the trigger
             start: 'top 80%',
-            end: 'top 20%',
-            scrub:false,
+            end: 'top 60%',
+            scrub:true,
             markers: false
         },
         opacity:0,
-        stagger: 2
+        stagger: 0.1
     });
 });
 
- 
+const paths = document.querySelectorAll('.line');
+const descs = document.querySelectorAll('.journey-desc');
+paths.forEach((path, j) => {
+    gsap.from(path, { 
+        opacity: 0,
+        stagger: 0.1,
+        rotateX: 90,
+        transformOrigin: "50% 0%",
+        scrollTrigger: {
+            trigger: path, // Use line as the trigger
+            start: 'top 80%',
+            end: 'top 20%',
+            scrub:true,
+            markers: false
+        },
+        opacity:0,
+        stagger: 5,
+    });
+    
+});
 
           
 
