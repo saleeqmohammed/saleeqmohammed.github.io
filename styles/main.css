@@ -479,6 +479,10 @@ padding-left: 0.25em;
     padding-bottom: 3rem;
     
  }
+ .journey-desc-logo{
+    height: 1rem;
+    display: none;
+}
 }
 /* work-styles  */
 
