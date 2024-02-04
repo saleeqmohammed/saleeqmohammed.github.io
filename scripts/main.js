@@ -38,6 +38,7 @@ let mediaQuery = window.matchMedia('(max-width: 780px)');
 
     document.querySelector('.menu').style.display = 'none';
     document.querySelector('.blur-background').style.opacity = 0;
+    document.querySelector('.blur-background').style.display = 'none';
     document.querySelector('.open-menu').style.display = 'block';
     document.querySelector('.close-menu').style.display = 'none';
   }
@@ -52,12 +53,14 @@ if (mediaQuery.matches){
                                                       if (responsiveMenuCheck.checked){
                                                         document.querySelector('.menu').style.display = 'block';
                                                         document.querySelector('.close-menu').style.display = 'block';
+                                                        document.querySelector('.blur-background').style.display='block';
                                                         document.querySelector('.blur-background').style.opacity = 1;
                                                         document.querySelector('.open-menu').style.display = 'none';
                                                         
                                                       }
                                                       else{
                                                         menuClose();
+                                                      
                                                       }
                                                     })
   }

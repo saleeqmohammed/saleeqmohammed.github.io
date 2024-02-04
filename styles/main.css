@@ -3,7 +3,9 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98777,98776,98773,98770');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
-
+:root{
+    
+}
 /*Do css reset*/
 *{
     margin: 0;
@@ -100,7 +102,7 @@ body{
 
 
 .blur-background {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -110,7 +112,7 @@ body{
     -webkit-backdrop-filter: blur(10px); /* For Safari */
     backdrop-filter: blur(10px);
     z-index: 5;
-    display: block;
+    display:none;
     opacity: 0;
     transition:  opacity 0.1s ease-in-out;
   }
@@ -128,7 +130,6 @@ section{
         margin-bottom: 8rem;
         position: relative;
     }
-
 
 }
 /* Navbar styles */
@@ -244,11 +245,19 @@ nav ul li a{
                                                 
 }
 
-.hero-social{
+.hero-container .hero-social{
     height: 1.5em;
     margin-right: 2em;
     margin-top: 5em;
 }
+
+.hero-container .hero-social:hover {
+ 
+
+
+}
+
+
 .hero-logo{
     position: relative;
     top:0;
@@ -408,11 +417,16 @@ nav ul li a{
  */
 
 
+
+
 /* Journey styles */
 
 .journey-table{
     margin-left: auto;
     margin-right: auto;
+    color: #000000;
+    padding-top: 4rem;
+    
     
     /*border: 1px solid red;*/
 }
@@ -424,19 +438,24 @@ nav ul li a{
     
 
 }
-.journey-logo{
 
+.journey-logo{
+align-self: center;
 padding-top: 0.3em;
 height: 1.7em;
-padding-left: 0.16rem;
 /*border: 1px solid red;*/
+padding-left: 0.25em;
 
 }
-
+.journey-desc-logo{
+    height: 1rem;
+    display: none;
+}
 .line{
     /*border: 1px solid red;*/
-   border-right:1px #000 solid; 
+   border-right:1px #000000 solid; 
    width: 1em;
+   
    
 
   
@@ -676,7 +695,7 @@ padding-left: 0.16rem;
         position: absolute;
         right: 1.2rem;
         /* background-color: rebeccapurple; */
-        z-index: 10;
+        z-index: 2;
     }
 
 }
@@ -735,25 +754,8 @@ footer{
 
 }
 
-.footer-nav{
-        font:300 1rem Poppins;
-        position:absolute;
-        right: 5vh;
-        top: 5vh;
-        z-index: 10;
-        display: none;
-    }
-.footer-nav ul{
-        list-style-position: outside;
-        text-align: center;
-        line-height: 2rem;
-        list-style-type:none;
-    }
-.footer-nav ul li a{
-    color: white;
-    opacity: 0.7;
-    text-decoration: none;
-}
+
+
 
 .footer-social-container{
     position: relative;
@@ -782,7 +784,9 @@ footer{
     font:300 0.8em Poppins;
     margin-left: 1em;
 }
-
+.footer-social-desc:hover{
+    text-decoration: underline #a3a3a3;
+}
 
 .footer-sep{
     position: relative;
