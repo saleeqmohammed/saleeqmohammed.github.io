@@ -125,9 +125,21 @@ section{
 @media(max-width:780px){
     section{
         
+        
         margin-bottom: 8rem;
         position: relative;
     }
+    
+#work{
+    padding-top: 25vh;
+}
+#journey{
+    padding-top: 15vh;
+}
+#talk{
+    min-height: 20vh;
+    padding-top: 7.5vh;
+}
 
 }
 /* Navbar styles */
@@ -459,7 +471,7 @@ padding-left: 0.25em;
     width: 20em;
     font: 300 0.8rem Poppins;
     /*border: 1px solid red;*/
-    padding-bottom: 2.0rem;
+    padding-bottom: 10vh;
     
 }
 
@@ -641,29 +653,33 @@ padding-left: 0.25em;
 /* Literature styles*/
 .literature-container{
     position: relative;
-    width: 60vw;
+    width:50vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 2rem;
-    column-gap: 2em;
+    row-gap: 2.5vh;
+    column-gap: 5vh;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top: 25vh;
     padding-bottom: 15vh;
 
 }
 .literature{
+    display: flex;
+    flex-direction: column;
     position: relative;
+    height: 20vh;
 }
 .literature-title{
     font: 700 1.2em Poppins;
     margin-bottom: 1em;
 }
 .literature-description{
-    font:300 0.8em Poppins;
+    font:300 0.9em Poppins;
 }
 .literature-download{
-    position: absolute;
+    position: relative;
+    
     right: 1.2rem;
 }
 
