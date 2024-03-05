@@ -370,7 +370,7 @@ nav ul li a{
     margin-left: 0.1em;
     font:700 7em Poppins;
     opacity: 0.6;
-    margin-bottom: 5rem;
+    margin-bottom: 0rem;
     flex-wrap: nowrap;
     text-shadow: 
     -1px -1px 0 #000,  
@@ -459,7 +459,7 @@ padding-left: 0.25em;
     width: 20em;
     font: 300 0.8rem Poppins;
     /*border: 1px solid red;*/
-    padding-bottom: 4rem;
+    padding-bottom: 2.0rem;
     
 }
 
@@ -484,7 +484,7 @@ padding-left: 0.25em;
     
     margin-left: auto;
     margin-right: auto;
-    width: 66vw;
+    width: 44vw;
 
 
     
@@ -519,7 +519,7 @@ padding-left: 0.25em;
     display: flex;
     gap:1rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
 }
 .work-content:nth-of-type(even){
@@ -527,7 +527,7 @@ padding-left: 0.25em;
     display: flex;
     gap:1rem;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     flex-direction: row-reverse;
     flex-wrap: row wrap;
 }
@@ -535,7 +535,7 @@ padding-left: 0.25em;
 
 
 .work-img{
-    width:30vw;
+    width:20vw;
 }
 .work-description{
     font:300 0.8em Poppins;
@@ -571,7 +571,7 @@ padding-left: 0.25em;
     border-radius: 0.25em;
     -moz-border:0.05em solid #000;
     -moz-border-radius: 0.25em;
-    margin-top: 3em;
+    /* margin-top: 3em; */
     display: inline-flex;
     background-size: 200% 100%;
     background-image: linear-gradient(to left, #000 50%, #fff 50%);
@@ -616,7 +616,7 @@ padding-left: 0.25em;
         animation: none;
     }
     .work-img{
-        height:40vw;
+        /* height:40vw; */
         width: 60vw;
        
         margin-bottom: 1rem;
@@ -709,9 +709,16 @@ padding-left: 0.25em;
     margin-right: auto;
     margin-bottom: 10vw;
 }
+.talk-para-container{
+    display: flex;
+    /* height: 30vw; */
+    align-items: center;
+    justify-content: center;
+
+}
 .talk-para{
     font:300 0.8rem Poppins;
-    width: 35vw;
+    width: 30vw;
 }
 .talk-img{
     width: 30vw;
