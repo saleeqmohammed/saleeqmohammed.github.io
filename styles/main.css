@@ -857,5 +857,8 @@ footer{
         top:20vw;
         left: -40vw;;
     }
+    footer{
+        min-height: 10vh;
+    }
 }
 
