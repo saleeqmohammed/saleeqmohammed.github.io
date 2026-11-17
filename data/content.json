@@ -18,10 +18,22 @@
     },
     "about": "I am an engineer turned researcher currently pursuing my doctorate as a Marie Skłodowska-Curie Doctoral Candidate at Universität Bremen in the SECORO Group (CAVECORE Project). My background spans mechanical engineering at IIT Tirupati, commercial automotive CAE simulation at Jaguar Land Rover, an MSc in Robotics (with Distinction) at the University of Birmingham, and research associate work on context-aware deliberation (EU CONVINCE Project). My goal is bringing mathematical rigor, formal verification, and cutting-edge AI into industrial robotics.",
     "highlights": [
-      { "label": "Current Focus", "value": "RAG for Safety in Human-Robot Collaboration" },
-      { "label": "EU Project", "value": "CAVECORE Doctoral Network (MSCA)" },
-      { "label": "Prior Industry", "value": "Jaguar Land Rover & Tata Elxsi" },
-      { "label": "Core Expertise", "value": "TAMP, ROS2, Verifiable Planning, Robot Control" }
+      {
+        "label": "Current Focus",
+        "value": "RAG for Safety in Human-Robot Collaboration"
+      },
+      {
+        "label": "EU Project",
+        "value": "CAVECORE Doctoral Network (MSCA)"
+      },
+      {
+        "label": "Prior Industry",
+        "value": "Jaguar Land Rover & Tata Elxsi"
+      },
+      {
+        "label": "Core Expertise",
+        "value": "TAMP, ROS2, Verifiable Planning, Robot Control"
+      }
     ]
   },
   "current_position": {
@@ -76,7 +88,13 @@
         "Pioneering Retrieval-Augmented Generation (RAG) pipelines for contextual hazard anticipation and verifiable runtime safety reasoning.",
         "Collaborating with European research and industrial partners to bridge software engineering with cognitive robotics."
       ],
-      "tags": ["MSCA", "RAG", "Safety", "Cognitive Robotics", "HRC"]
+      "tags": [
+        "MSCA",
+        "RAG",
+        "Safety",
+        "Cognitive Robotics",
+        "HRC"
+      ]
     },
     {
       "id": "exp-bham",
@@ -95,7 +113,15 @@
         "Explored Vision-Language Model (VLM)-based planners for cognitive reasoning in Task and Motion Planning (TAMP).",
         "Co-authoring a manuscript on plan refinement under uncertainty (target: IEEE RA-L)."
       ],
-      "tags": ["ROS2", "py_trees_ros", "PDDLStream", "UR10e", "Kinova Gen3", "RL", "TAMP"]
+      "tags": [
+        "ROS2",
+        "py_trees_ros",
+        "PDDLStream",
+        "UR10e",
+        "Kinova Gen3",
+        "RL",
+        "TAMP"
+      ]
     },
     {
       "id": "exp-jlr",
@@ -111,7 +137,13 @@
         "Developed automated data analysis scripts and regression validation pipelines for large-scale multi-domain simulation data.",
         "Collaborated with cross-functional propulsion and controls engineering teams to calibrate drive-unit performance."
       ],
-      "tags": ["Electric Vehicles", "EDU Simulation", "Powertrain Optimization", "Data Automation", "Python"]
+      "tags": [
+        "Electric Vehicles",
+        "EDU Simulation",
+        "Powertrain Optimization",
+        "Data Automation",
+        "Python"
+      ]
     },
     {
       "id": "exp-tata",
@@ -126,7 +158,11 @@
         "Developed CAD/CAE models and kinematic simulations for automotive and consumer product engineering.",
         "Supported technical design reviews, tolerance analyses, and industrial engineering documentation."
       ],
-      "tags": ["CAD/CAE", "Kinematic Analysis", "Design Verification"]
+      "tags": [
+        "CAD/CAE",
+        "Kinematic Analysis",
+        "Design Verification"
+      ]
     },
     {
       "id": "exp-iit-intern",
@@ -142,7 +178,13 @@
         "Simulated robotic welding workflows in CoppeliaSim, deployed on industrial KUKA KR IONTEC arm, and validated with SAW and MIG welding.",
         "Applied Design of Experiments (DOE) principles for multi-variable process parameter optimization."
       ],
-      "tags": ["KUKA Robotics", "CoppeliaSim", "WAAM", "Thermo-Mechanical", "DOE"]
+      "tags": [
+        "KUKA Robotics",
+        "CoppeliaSim",
+        "WAAM",
+        "Thermo-Mechanical",
+        "DOE"
+      ]
     }
   ],
   "education": [
@@ -154,7 +196,11 @@
       "grade": "Marie Skłodowska-Curie Actions Doctoral Fellow",
       "logo": "icons/bremen_logo_dark.png",
       "thesis": "Safety and Verifiable Reasoning in Human-Robot Collaboration via Retrieval-Augmented Generation (EU CAVECORE Doctoral Network).",
-      "coursework": ["Software Engineering for Cognitive Robotics", "Formal Verification & Safe HRC", "Context-Aware Deliberation"]
+      "coursework": [
+        "Software Engineering for Cognitive Robotics",
+        "Formal Verification & Safe HRC",
+        "Context-Aware Deliberation"
+      ]
     },
     {
       "degree": "MSc in Robotics (With Distinction)",
@@ -164,7 +210,14 @@
       "grade": "Distinction (GPA 3.81 / 4.0 WES conversion)",
       "logo": "icons/uob_logo_dark.png",
       "thesis": "HAMCBS: Human-Aware Multi-Robot Motion Planner — Integrated Constraint-Based Search (CBS) with Model Predictive Control (MPC) and Social Force Models in ROS2 and Gazebo.",
-      "coursework": ["Intelligent Robotics", "Advanced Robotics", "Intelligent Interactive Systems", "Machine Learning", "Neural Computation", "Computer Vision"]
+      "coursework": [
+        "Intelligent Robotics",
+        "Advanced Robotics",
+        "Intelligent Interactive Systems",
+        "Machine Learning",
+        "Neural Computation",
+        "Computer Vision"
+      ]
     },
     {
       "degree": "B.Tech in Mechanical Engineering",
@@ -174,7 +227,10 @@
       "grade": "CGPA: 8.18 / 10.0 (~3.5 / 4.0 WES conversion)",
       "logo": "icons/iit_logo_dark.png",
       "thesis": "Thermo-Mechanical Modelling for Robotic Wire Arc Additive Manufacturing (WAAM).",
-      "leadership": ["Coordinator, Robotics Club IIT Tirupati (2019–2020)", "Council Member, Technical Affairs Council (2020–2021)"]
+      "leadership": [
+        "Coordinator, Robotics Club IIT Tirupati (2019–2020)",
+        "Council Member, Technical Affairs Council (2020–2021)"
+      ]
     }
   ],
   "projects": [
@@ -190,7 +246,15 @@
         "Implemented in ROS2 with full Gazebo physics simulation and dynamic obstacle avoidance.",
         "Scalable collision resolution benchmarked across varying human density levels."
       ],
-      "tags": ["ROS2", "Multi-Agent Planning", "CBS", "MPC", "Social Force Model", "Gazebo", "Python"],
+      "tags": [
+        "ROS2",
+        "Multi-Agent Planning",
+        "CBS",
+        "MPC",
+        "Social Force Model",
+        "Gazebo",
+        "Python"
+      ],
       "github_url": "https://github.com/saleeqmohammed/human_aware_MRMP",
       "image": "images/projects/hamcbs_output.gif"
     },
@@ -206,7 +270,14 @@
         "Density-based spatial clustering (DBSCAN) isolates multimodal hypothesis clouds and rapidly recovers true robot pose.",
         "Benchmarked on complex floorplans under extreme sensor dropout and random pose teleportation."
       ],
-      "tags": ["Python", "Particle Filter", "DBSCAN", "State Estimation", "Monte-Carlo", "Robotics"],
+      "tags": [
+        "Python",
+        "Particle Filter",
+        "DBSCAN",
+        "State Estimation",
+        "Monte-Carlo",
+        "Robotics"
+      ],
       "github_url": "https://github.com/saleeqmohammed/variance_based_pf_localisation",
       "image": "images/projects/pf_kidnap_dbscan.png"
     },
@@ -223,7 +294,16 @@
         "Composite formation abstraction: agents enclose and secure the payload, transitioning dynamically to a single kinematic entity during transit.",
         "Validated across high-fidelity 3D Gazebo and 2D Stage multi-robot simulation environments."
       ],
-      "tags": ["ROS Noetic", "POMDP", "PBVI", "Multi-Agent Planning", "Gazebo", "C++", "Python", "DBSCAN"],
+      "tags": [
+        "ROS Noetic",
+        "POMDP",
+        "PBVI",
+        "Multi-Agent Planning",
+        "Gazebo",
+        "C++",
+        "Python",
+        "DBSCAN"
+      ],
       "github_url": "https://github.com/saleeqmohammed/roboconvoy",
       "pdf_url": "docs/RoboConvoy_Technical_Report.pdf",
       "image": "images/projects/roboconvoy_3d_transport.png"
@@ -240,7 +320,13 @@
         "Integrates virtual depth cameras and force-torque sensors for closed-loop manipulation experiments.",
         "Served as simulation prototyping environment for real robot deployment."
       ],
-      "tags": ["CoppeliaSim", "UR10e", "Robotic Manipulation", "Python", "Kinematics"],
+      "tags": [
+        "CoppeliaSim",
+        "UR10e",
+        "Robotic Manipulation",
+        "Python",
+        "Kinematics"
+      ],
       "github_url": "https://github.com/saleeqmohammed/coppeliasim_ur10e",
       "image": "images/projects/ur10e_coppelia.png"
     },
@@ -256,25 +342,16 @@
         "Experimental validation conducted at Lincoln Electric with KUKA KR IONTEC arm using submerged arc (SAW) and MIG welding.",
         "Implemented in Python with CoppeliaSim kinematic validation."
       ],
-      "tags": ["Python", "FEM / CAE", "Additive Manufacturing (WAAM)", "KUKA Robotics", "Lincoln Electric"],
+      "tags": [
+        "Python",
+        "FEM / CAE",
+        "Additive Manufacturing (WAAM)",
+        "KUKA Robotics",
+        "Lincoln Electric"
+      ],
       "github_url": "https://github.com/saleeqmohammed/Analytical-thermal-modelling-for-welding",
       "pdf_url": "literature/BTP_8th_sem_report .pdf",
       "image": "images/projects/waam_thermal_simulation.png"
-    },
-    {
-      "id": "tampnet",
-      "title": "TAMPNet: Mobile Robot Reactive Deliberation",
-      "category": "Robotics & Planning",
-      "featured": false,
-      "stars": 0,
-      "description": "Mobile robot platform featuring online re-planning, task execution, and hardware-in-the-loop embedded control.",
-      "highlights": [
-        "Autonomous object transport with reactive obstacle avoidance and dynamic goal re-prioritization.",
-        "Hardware-software integration bridging embedded microcontrollers with high-level deliberative plans."
-      ],
-      "tags": ["Lua", "Embedded", "Task & Motion Planning", "Hardware-in-the-loop"],
-      "github_url": "https://github.com/saleeqmohammed/TAMPNet",
-      "image": "images/projects/tampnet_deliberation.png"
     },
     {
       "id": "jlr-edu",
@@ -287,7 +364,13 @@
         "Modeled electrical and thermal losses across standard drive cycles (WLTP) to inform powertrain component sizing.",
         "Built automated simulation batch runners and parametric data analysis pipelines."
       ],
-      "tags": ["Jaguar Land Rover", "EV Powertrain", "Simscape / Simulink", "Data Automation", "Python"],
+      "tags": [
+        "Jaguar Land Rover",
+        "EV Powertrain",
+        "Simscape / Simulink",
+        "Data Automation",
+        "Python"
+      ],
       "image": "images/projects/jlr_edu_simulation.png"
     }
   ],
@@ -299,7 +382,13 @@
       "venue": "Manuscript in Preparation (Target: IEEE Robotics and Automation Letters - RA-L)",
       "status": "In Preparation",
       "year": 2026,
-      "tags": ["Behavior Trees", "PDDLStream", "Manipulation", "Uncertainty", "Verification"],
+      "tags": [
+        "Behavior Trees",
+        "PDDLStream",
+        "Manipulation",
+        "Uncertainty",
+        "Verification"
+      ],
       "summary": "Presents a hierarchical deliberation architecture combining behavior trees (py_trees_ros) with symbolic-geometric Task and Motion Planning (PDDLStream) to dynamically refine plans when perceptual and action uncertainties arise during manipulation."
     },
     {
@@ -309,7 +398,13 @@
       "venue": "Master's Thesis with Distinction — University of Birmingham",
       "status": "Published / Archived",
       "year": 2024,
-      "tags": ["CBS", "MPC", "Social Force", "ROS2", "Gazebo"],
+      "tags": [
+        "CBS",
+        "MPC",
+        "Social Force",
+        "ROS2",
+        "Gazebo"
+      ],
       "summary": "Developed a two-level planner incorporating Social Force Models into CBS low-level search and MPC trajectory optimization to respect human personal space during multi-robot fleet coordination.",
       "code_url": "https://github.com/saleeqmohammed/human_aware_MRMP"
     },
@@ -320,7 +415,14 @@
       "venue": "Technical Report & Benchmark — Intelligent Robotics, University of Birmingham",
       "status": "Technical Report",
       "year": 2024,
-      "tags": ["POMDP", "PBVI", "Multi-Agent Transport", "MCL", "DBSCAN", "ROS"],
+      "tags": [
+        "POMDP",
+        "PBVI",
+        "Multi-Agent Transport",
+        "MCL",
+        "DBSCAN",
+        "ROS"
+      ],
       "summary": "Formulated a cooperative multi-robot payload transportation system under perceptual and environmental uncertainty using Partially Observable Markov Decision Processes solved via Point-Based Value Iteration (PBVI) with composite formation kinematic abstraction.",
       "pdf_url": "docs/RoboConvoy_Technical_Report.pdf",
       "code_url": "https://github.com/saleeqmohammed/roboconvoy"
@@ -332,7 +434,13 @@
       "venue": "B.Tech Capstone Thesis — IIT Tirupati",
       "status": "Archived Report",
       "year": 2022,
-      "tags": ["WAAM", "KUKA", "Thermal Simulation", "CAE", "Lincoln Electric"],
+      "tags": [
+        "WAAM",
+        "KUKA",
+        "Thermal Simulation",
+        "CAE",
+        "Lincoln Electric"
+      ],
       "summary": "Programmatic analytical solution for transient temperature distributions and residual stress profiles in additive manufacturing, validated on industrial KUKA robotic welding systems.",
       "pdf_url": "literature/BTP_8th_sem_report .pdf",
       "code_url": "https://github.com/saleeqmohammed/Analytical-thermal-modelling-for-welding"
@@ -368,7 +476,9 @@
       "WLTP Powertrain Simulation"
     ],
     "ai_software": [
-      "Python (NumPy, SciPy, Matplotlib)",
+      "Python (NumPy",
+      "SciPy",
+      "Matplotlib)",
       "C / C++",
       "PyTorch / TensorFlow",
       "OpenCV",
