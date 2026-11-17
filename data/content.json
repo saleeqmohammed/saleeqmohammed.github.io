@@ -352,26 +352,6 @@
       "github_url": "https://github.com/saleeqmohammed/Analytical-thermal-modelling-for-welding",
       "pdf_url": "literature/BTP_8th_sem_report .pdf",
       "image": "images/projects/waam_thermal_simulation.png"
-    },
-    {
-      "id": "jlr-edu",
-      "title": "Electric Drive Unit (EDU) Efficiency Optimization",
-      "category": "Simulation & CAE",
-      "featured": true,
-      "stars": 0,
-      "description": "High-fidelity electric vehicle powertrain and motor-inverter efficiency modeling developed for Jaguar Land Rover's next-generation EV platforms.",
-      "highlights": [
-        "Modeled electrical and thermal losses across standard drive cycles (WLTP) to inform powertrain component sizing.",
-        "Built automated simulation batch runners and parametric data analysis pipelines."
-      ],
-      "tags": [
-        "Jaguar Land Rover",
-        "EV Powertrain",
-        "Simscape / Simulink",
-        "Data Automation",
-        "Python"
-      ],
-      "image": "images/projects/jlr_edu_simulation.png"
     }
   ],
   "publications": [
