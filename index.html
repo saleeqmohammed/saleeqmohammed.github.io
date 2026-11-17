@@ -3,358 +3,436 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammed Saleeq Kolleth</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- google meta tag -->
-  <meta name="google-site-verification" content="-_O-0E_qOekhDCYoO9Je8JBhggJ0FyZtXcvbdGDje78" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Mohammed Saleeq Kolleth — Doctoral Candidate & Robotics Systems Researcher</title>
+  <meta name="description" content="Portfolio of Mohammed Saleeq Kolleth — Marie Skłodowska-Curie Doctoral Candidate at Universität Bremen (CAVECORE), former Research Associate at University of Birmingham (CONVINCE), and former CAE Engineer at Jaguar Land Rover.">
+  <meta name="keywords" content="Mohammed Saleeq Kolleth, Robotics, AI, Marie Curie, MSCA, CAVECORE, CONVINCE, ROS2, TAMP, POMDP, Jaguar Land Rover, IIT Tirupati">
+  <meta name="author" content="Mohammed Saleeq Kolleth">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Mohammed Saleeq Kolleth — Robotics Researcher & Systems Engineer">
+  <meta property="og:description" content="Bridging verifiable cognitive deliberation with production-grade engineering for robust robotic systems.">
+  <meta property="og:image" content="images/profile_headshot.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <input type="checkbox" name="menu-check" id="menu-check">
-        <span class="menu">
+  <!-- ================= SITE NAVIGATION ================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">MSK</span>
+        <span class="brand-name">Saleeq Kolleth</span>
+      </a>
 
-          <li ><a class="navlink active-nav" href="#home" onclick="menuClose()">Home</a></li>
-          <li ><a class="navlink" href="#work" onclick="menuClose()">Work</a></li>
-          <li ><a class="navlink" href="#journey" onclick="menuClose()"> Journey</a></li>
-          <li ><a class="navlink" href="#literature" onclick="menuClose()">Literature</a></li>
-          <li ><a class="navlink" href="#talk" onclick="menuClose()">Talk</a></li>
-        </span>
-        <label for="menu-check" class="open-menu">
-          <!-- <img class="menu-handle" src="icons/bars-solid.svg" alt="hamburger menu"> -->
-          <span class="material-symbols-outlined ">
-            menu
-            </span>
-        </label>
-        <label for="menu-check" class="close-menu">
-          <span class="material-symbols-outlined ">close</span>
-          <!-- <img class="menu-handle"  src="icons/xmark-solid.svg" alt="close menu"> -->
-         </label>
-        <!-- <li class="navlink"><a href="#footer"> Let's talk</a></li> -->
-      </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#spotlight" class="nav-link">EU Research</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#publications" class="nav-link">Publications</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="docs/Mohammed_Saleeq_CV.pdf" target="_blank" class="btn btn-secondary cv-link-btn" title="Download Curriculum Vitae">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          CV (PDF)
+        </a>
+        <button class="nav-mobile-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
   </header>
-  <div class="blur-background"></div>
+
   <main>
-
-    <section id="home" class="section">
-      <div class="hero-container">
-        <div class="hero-logo">
-          <a style="text-decoration: none;" href="https://bitly.ws/35Vnu">
-          <img class="barcode-img" src="icons/barcode.svg"></a><img id="barcode-arrow" src="icons/arrow.svg" alt="arrow pointing left"><p class="img-info">Click/Scan for resume.</p>
+    <!-- ================= HERO SECTION ================= -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
           
+          <!-- Hero Text -->
+          <div class="hero-text-content">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span id="hero-status-text">Marie Skłodowska-Curie Doctoral Candidate · Universität Bremen</span>
+            </div>
+
+            <h1 class="hero-name" id="hero-name">Mohammed Saleeq Kolleth</h1>
+            <p class="hero-role" id="hero-role">Doctoral Candidate & Robotics Systems Researcher</p>
+            <p class="hero-tagline" id="hero-tagline">
+              Bridging verifiable cognitive deliberation with production-grade engineering for robust robotic systems in human-shared environments.
+            </p>
+
+            <div class="hero-actions">
+              <a href="docs/Mohammed_Saleeq_CV.pdf" target="_blank" class="btn btn-primary cv-link-btn">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Download CV
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                Featured Systems
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                Get In Touch
+              </a>
+            </div>
+
+            <div class="hero-socials">
+              <a href="https://github.com/saleeqmohammed" target="_blank" class="social-icon-btn" title="GitHub / saleeqmohammed">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mohammedsaleeqk" target="_blank" class="social-icon-btn" title="LinkedIn / mohammedsaleeqk">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </a>
+              <a href="mailto:saleeqmohammed7@gmail.com" class="social-icon-btn" title="Email: saleeqmohammed7@gmail.com">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCBCfD3fC5Lfip8_Xwh0DoYA" target="_blank" class="social-icon-btn" title="YouTube Channel">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Avatar Card -->
+          <div class="hero-avatar-wrapper">
+            <div class="avatar-frame">
+              <img src="images/profile_headshot.jpg" alt="Mohammed Saleeq Kolleth" class="avatar-img">
+            </div>
+            <div class="hero-logos-strip">
+              <img src="icons/bremen_logo_dark.png" alt="Universität Bremen" title="Universität Bremen">
+              <img src="icons/uob_logo_dark.png" alt="University of Birmingham" title="University of Birmingham">
+              <img src="icons/jlr_logo_dark.png" alt="Jaguar Land Rover" title="Jaguar Land Rover">
+              <img src="icons/iit_logo_dark.png" alt="IIT Tirupati" title="IIT Tirupati">
+            </div>
+          </div>
+
         </div>
-        <h2>Hi, I'm</h2>
-        <h1>
-          SALEEQ
-        </h1>
-        <p>A Robotics and AI engineer with some serious passion and skills in web development.</p>
-        <div class="hero-social-container">
-          <a href="https://github.com/saleeqmohammed"><img class="hero-social" src="icons/github-dark.svg" alt=""></a>
-          <a href="https://www.linkedin.com/in/mohammedsaleeqk"><img class="hero-social" src="icons/linkedin-dark.svg" alt=""></a>
-          <a href="https://www.youtube.com/channel/UCBCfD3fC5Lfip8_Xwh0DoYA"><img class="hero-social" src="icons/youtube-dark.svg" alt=""></a>
-          <a href="https://twitter.com/Saleeqkolleth"><img class="hero-social" src="icons/square-x-twitter-dark.svg" alt=""></a>
-          <a href="https://www.instagram.com/mohammed_saleeq?igsh=MTNvMWE5dXJjYjViYw=="><img class="hero-social" src="icons/square-instagram-dark.svg" alt=""></a>
-          <a href="mailto:saleeqmohammed7@gmail.com"><img class="hero-social" src="icons/gmail-dark.svg" alt=""></a>
+
+        <!-- Metrics Strip -->
+        <div class="metrics-strip" id="metrics-container">
+          <div class="metric-card">
+            <span class="metric-label">Current Focus</span>
+            <span class="metric-value">RAG for Safety in Human-Robot Collaboration</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">EU Doctoral Network</span>
+            <span class="metric-value">CAVECORE (MSCA DC) · Universität Bremen</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Prior Industry</span>
+            <span class="metric-value">Jaguar Land Rover & Tata Elxsi</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Core Expertise</span>
+            <span class="metric-value">TAMP, ROS2, Verifiable Planning, Robot Control</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profile & Philosophy</span>
+          <h2 class="section-title">The "Engineer Turned Researcher" Story</h2>
+          <p class="section-subtitle">
+            Combining rigorous academic research with production-grade engineering discipline to deliver robotic autonomy that performs reliably in the physical world.
+          </p>
+        </div>
+
+        <div style="background:var(--bg-card); border:1px solid var(--border-card); border-radius:14px; padding:2rem; line-height:1.75; font-size:1.02rem; color:#cbd5e1;">
+          <p style="margin-bottom:1rem;">
+            I am a robotics and AI researcher currently pursuing my doctorate as a <strong>Marie Skłodowska-Curie Actions (MSCA) Doctoral Candidate</strong> at <strong>Universität Bremen</strong> within the <strong>SECORO Group</strong> (Software Engineering for Cognitive Robotics) on the EU <strong>CAVECORE</strong> project.
+          </p>
+          <p style="margin-bottom:1rem;">
+            Before my PhD, I worked as a <strong>Research Associate</strong> at the <strong>University of Birmingham</strong> on the Horizon EU / UKRI <strong>CONVINCE Project</strong>, engineering hierarchical deliberation frameworks combining Behavior Trees (<code style="font-family:var(--font-mono); color:var(--primary-light);">py_trees_ros</code>), symbolic Task and Motion Planning (<code style="font-family:var(--font-mono); color:var(--primary-light);">PDDLStream</code>), and physical manipulation on <strong>Universal Robots UR10e</strong> and <strong>Kinova Gen3</strong> arms.
+          </p>
+          <p>
+            My industrial roots include working as an <strong>EDU System Integration Engineer</strong> for <strong>Jaguar Land Rover</strong> (optimizing electric powertrains through automated simulation pipelines) and <strong>Tata Elxsi</strong>, building upon an <strong>MSc in Robotics (Distinction)</strong> from University of Birmingham and a <strong>B.Tech in Mechanical Engineering</strong> from <strong>IIT Tirupati</strong>.
+          </p>
         </div>
       </div>
-    <div class="circle">
-      <div class="text">
-        <p>Scroll to- W ork - Journey - Lit. - Talk - </p>
+    </section>
+
+    <!-- ================= ACTIVE EU RESEARCH SPOTLIGHT ================= -->
+    <section id="spotlight" class="section" style="background: rgba(15, 23, 42, 0.35);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">EU Research Initiatives</span>
+          <h2 class="section-title">Cutting-Edge Research Programs</h2>
+          <p class="section-subtitle">
+            Leading and contributing to European Union flagship robotics initiatives focused on safety, deliberation, and verification.
+          </p>
+        </div>
+
+        <div class="spotlight-grid" id="spotlight-container">
+          <!-- CAVECORE Current PhD -->
+          <div class="spotlight-card">
+            <div class="spotlight-top">
+              <span class="spotlight-badge">● Active PhD Research</span>
+              <img src="icons/bremen_logo_dark.png" alt="Bremen" class="spotlight-logo-thumb">
+            </div>
+            <div>
+              <h3 class="spotlight-title">CAVECORE Project</h3>
+              <p class="spotlight-inst">SECORO Group &bull; Universität Bremen</p>
+            </div>
+            <p class="spotlight-desc">
+              Investigating Retrieval-Augmented Generation (RAG) and formal reasoning pipelines to ensure verifiable safety constraints in Human-Robot Collaboration (HRC) industrial environments.
+            </p>
+            <div class="spotlight-tags">
+              <span class="tag-pill">MSCA Doctoral Network</span>
+              <span class="tag-pill">RAG for Safety</span>
+              <span class="tag-pill">Cognitive Robotics</span>
+              <span class="tag-pill">HRC</span>
+            </div>
+            <div>
+              <a href="https://cavecore.eu/" target="_blank" class="project-link">
+                Visit CAVECORE Network &rarr;
+              </a>
+            </div>
+          </div>
+
+          <!-- CONVINCE Research Associate -->
+          <div class="spotlight-card secondary">
+            <div class="spotlight-top">
+              <span class="spotlight-badge concluded">Horizon EU / UKRI Project</span>
+              <img src="icons/uob_logo_dark.png" alt="University of Birmingham" class="spotlight-logo-thumb">
+            </div>
+            <div>
+              <h3 class="spotlight-title">CONVINCE Project</h3>
+              <p class="spotlight-inst">Intelligent Robotics Lab &bull; University of Birmingham</p>
+            </div>
+            <p class="spotlight-desc">
+              Context-aware robotic deliberation and formal verification. Designed hierarchical planning pipelines with Behavior Trees (py_trees_ros) and symbolic TAMP (PDDLStream) on UR10e and Kinova Gen3 platforms.
+            </p>
+            <div class="spotlight-tags">
+              <span class="tag-pill">ROS2</span>
+              <span class="tag-pill">py_trees_ros</span>
+              <span class="tag-pill">PDDLStream</span>
+              <span class="tag-pill">UR10e</span>
+              <span class="tag-pill">Kinova Gen3</span>
+            </div>
+            <div>
+              <a href="https://convince-project.eu/" target="_blank" class="project-link">
+                Visit CONVINCE Project &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Pillars -->
+        <div style="margin-top: 3.5rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem; color: #e2e8f0;">Core Research Themes</h3>
+          <div class="interests-grid" id="interests-container">
+            <!-- Dynamically populated or rendered -->
+          </div>
+        </div>
+
       </div>
-      <img src="icons/arrow.svg" alt="arrow pointing down" class="arrow_down">
+    </section>
+
+    <!-- ================= FEATURED PROJECTS & SYSTEMS ================= -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Showcase</span>
+          <h2 class="section-title">Featured Systems & Software</h2>
+          <p class="section-subtitle">
+            Open-source algorithms, multi-robot coordination frameworks, and production-validated simulations.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" onclick="filterProjects('all', this)">All Systems</button>
+          <button class="filter-btn" onclick="filterProjects('Robotics & Planning', this)">Robotics & Planning</button>
+          <button class="filter-btn" onclick="filterProjects('Localization', this)">Localization & State Estimation</button>
+          <button class="filter-btn" onclick="filterProjects('Simulation', this)">Simulation & CAE</button>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+          <!-- Populated dynamically via scripts/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DUAL-TRACK EXPERIENCE ================= -->
+    <section id="experience" class="section" style="background: rgba(15, 23, 42, 0.35);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Trajectory</span>
+          <h2 class="section-title">Industrial Engineering & Research Appointments</h2>
+          <p class="section-subtitle">
+            Bridging commercial automotive CAE simulation with European academic research labs.
+          </p>
+        </div>
+
+        <div class="experience-timeline" id="experience-timeline">
+          <!-- Populated dynamically -->
+        </div>
+
+        <div style="margin-top: 4rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem; color: #e2e8f0;">Academic Education</h3>
+          <div class="experience-timeline" id="education-timeline">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= PUBLICATIONS & PREPRINTS ================= -->
+    <section id="publications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Scholarly Output</span>
+          <h2 class="section-title">Publications & Manuscripts</h2>
+          <p class="section-subtitle">
+            Peer-reviewed research, manuscripts under review, and formal theses.
+          </p>
+        </div>
+
+        <div class="publications-list" id="publications-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECHNICAL SKILLS MATRIX ================= -->
+    <section id="skills" class="section" style="background: rgba(15, 23, 42, 0.35);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Technical Skills & Tooling Matrix</h2>
+          <p class="section-subtitle">
+            Production-grade software, robotics middleware, manipulators, and simulation tools.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Awards Grid -->
+        <div style="margin-top: 3.5rem;">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem; color: #e2e8f0;">Awards & Honors</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem;">
+            <div class="metric-card">
+              <span class="metric-label" style="color:var(--accent-amber);">🥉 Bronze Medal (3rd of 29 Teams)</span>
+              <span class="metric-value">Inter IIT Techmeet (2019)</span>
+              <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Terrace Farming Robot with autonomous navigation across uneven slope terrains.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label" style="color:var(--accent-emerald);">🥇 1st Place Winner</span>
+              <span class="metric-value">Kryptobot CV Challenge (2019)</span>
+              <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">National level computer vision and robotics hackathon at CEG Anna University.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label" style="color:var(--primary-light);">🏆 Winner</span>
+              <span class="metric-value">Robosphera Soccer Robot (2020)</span>
+              <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">High-speed multi-robot team coordination at Tirutsava technical festival.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-label" style="color:var(--accent-indigo);">🎓 Specialization</span>
+              <span class="metric-value">DeepLearning.AI</span>
+              <p style="font-size:0.82rem; color:var(--text-muted); margin-top:0.25rem;">Neural Networks & Deep Learning certification by Andrew Ng.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTACT / HIRE ME ================= -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <span class="section-tag" style="color:#7dd3fc;">Industrial Opportunities</span>
+            <h2 class="contact-headline">Looking for Robotics & AI Talent?</h2>
+            <p class="contact-text">
+              I am interested in discussing industrial R&D positions, research scientist roles, and collaborative projects in autonomous systems, cognitive robotics, and verifiable planning.
+            </p>
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <a href="mailto:saleeqmohammed7@gmail.com" class="btn btn-primary">
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Send Direct Email
+              </a>
+              <a href="https://www.linkedin.com/in/mohammedsaleeqk" target="_blank" class="btn btn-secondary">
+                Connect on LinkedIn &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-direct-box">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <p style="font-size:0.75rem; color:var(--text-dim); text-transform:uppercase; font-family:var(--font-mono);">Location</p>
+                <p style="font-size:0.92rem; font-weight:600; color:var(--text-main);">Bremen, Germany</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <p style="font-size:0.75rem; color:var(--text-dim); text-transform:uppercase; font-family:var(--font-mono);">Email</p>
+                <a href="mailto:saleeqmohammed7@gmail.com" style="font-size:0.92rem; font-weight:600; color:var(--primary-light);">saleeqmohammed7@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <p style="font-size:0.75rem; color:var(--text-dim); text-transform:uppercase; font-family:var(--font-mono);">GitHub</p>
+                <a href="https://github.com/saleeqmohammed" target="_blank" style="font-size:0.92rem; font-weight:600; color:var(--primary-light);">github.com/saleeqmohammed</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div>
+        <p>&copy; 2026 Mohammed Saleeq Kolleth &bull; Built with precision &bull; Deployed on GitHub Pages</p>
+      </div>
+      <div class="footer-links">
+        <a href="#hero">Back to Top &uarr;</a>
+        <a href="docs/Mohammed_Saleeq_CV.pdf" target="_blank">CV (PDF)</a>
+        <a href="admin/index.html" title="Open Portfolio Content Management Studio (Shortcut: Ctrl+Shift+A)" style="opacity: 0.6; font-size: 0.8rem;">Studio CMS</a>
+      </div>
     </div>
-  </section>
-  
-  <!--Work section-->
+  </footer>
 
-  <section class="section" id="work">
-    
-
-      <h1 class="watermark">Work</h1>
-      <article class=" work-container">
-        
-        <h2 class="work-title"><span class="work-n">01</span>AMC Localization</h2>
-        <div class="work-content curr-item">
-          
-          <div class="image-container">
-            <img src="images/Kidnap_2.png" alt="" class="work-img">
-            
-          </div>
-          <h2 class="secondary-work-title"><span class="work-n">01</span>AMC Localization</h2>
-          <div class="details-container">
-            
-            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam, at deleniti placeat quas nam ipsam hic tenetur laudantium vel non aliquam, eum suscipit laboriosam. </p>
-            <a href="#" class="read-more-work">Read more... </a>
-            <button class=" sliding-button demo-btn">Demo</button>
-          </div>
-        </div>
-      
-        
-        
-        
-        <h2 class="work-title"><span class="work-n">02</span>Finance Tracker</h2>
-        <div class="work-content next-item ">
-          
-          <div class="image-container">
-            <img src="images/Web-App-Trends-Banner-Image.webp" alt="" class="work-img">
-            
-          </div>
-          <h2 class="secondary-work-title"><span class="work-n">02</span>Finance Tracker</h2>
-          <div class="details-container">
-            
-            <p class="work-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam, at deleniti placeat quas nam ipsam hic tenetur laudantium vel non aliquam, eum suscipit laboriosam.</p>
-            <a href="#" class="read-more-work">Read more... </a>
-            <button class="demo-btn sliding-button">Demo</button>
-          </div>
-        </div>
-      </article>
-    
-      
-      <div class="more-btn-container">
-
-      <button class="more-btn">explore all</button>
-      </div>
-  </section>
-
-
-
-<!--Journey section-->
-
-  <section id="journey" class="section">
-
-
-      <h1 class="watermark">Journey</h1>
-      <table class="section-item journey-table">
-        
-        <tr class="journy-title-row">
-          <td colspan="2">
-            <img class="journey-logo" src="icons/default_jouney.svg" alt="a bubble">
-
-        </td>
-        <td class="journey-title-desc" colspan="3"><img class="journey-desc-logo" src="icons/uob_logo.png" alt="a bubble">MSc Robotics UoB</td>
-      </tr>
-      <tr>
-        <td class="line"></td><td ></td><td class="journey-desc">Spetember '23 - September '24 <br/>Masters in Robotics software at the University of Birmingham</td>
-      </tr>
-
-      <tr class="journy-title-row">
-        <td colspan="2">
-          <img class="journey-logo" src="icons/default_jouney.svg" alt="a bubble">
-          
-        </td>
-        <td class="journey-title-desc" colspan="3"><img class="journey-desc-logo" src="icons/jlr_logo.png" alt="a bubble">CAE Engineer JLR</td>
-      </tr>
-      <tr>
-        <td class="line"></td><td ></td><td class="journey-desc">Worked as an EDU Efficiency engineer at Jaguar Landrover UK(ODEC) on Electric vehicle modelling and simulation.</td>
-      </tr>
-      
-      <tr class="journy-title-row">
-        <td colspan="2">
-          <img class="journey-logo" src="icons/default_jouney.svg" alt="a bubble">
-          
-        </td>
-        <td class="journey-title-desc" colspan="3"><img class="journey-desc-logo" src="icons/tata_logo.png" alt="a bubble">Design Engineer</td>
-      </tr>
-      <tr>
-        <td class="line">&nbsp;</td><td >&nbsp;</td><td class="journey-desc">Worked as an Industrial design engineer at TATA ELXSI on design and automation.</td>
-      </tr>
-      <tr class="journy-title-row">
-        <td colspan="2">
-          
-          <img class="journey-logo" src="icons/default_jouney.svg" alt="a bubble">
-        </td>
-        <td class="journey-title-desc" colspan="3"><img class="journey-desc-logo" src="icons/iit_logo.png" alt="a bubble">B.Tech Mechanical Engg</td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td><td >&nbsp;</td><td class="journey-desc">Bachelor's in Mechanical Engineering from IIT Tirupati</td>
-      </tr>
-      
-      
-    </table>
-  
-  </section>
-
-
-
-
-
-  <section id="literature" class="section">
-    <h1 class="watermark">
-      Literature
-    </h1>
-    <article class="literature-container">
-      <div class="literature">
-        <h3 class="literature-title">01 Analytical WAAM</h3>
-        <p class="literature-description">An analytical solution and programmatic implementation to thermo mechanical model of wire arc additive manufacturing. </p>
-        <a href ="https://drive.google.com/file/d/1dSEilr259ljEAMdj7wA0OD99W69VxFcf/view?usp=sharing"> <img src="icons/download_black.svg" alt="download button" class="literature-download"></a>
-      </div>
-      <div class="literature">
-        <h3 class="literature-title">02 AMC Localization</h3>
-        <p class="literature-description">A detailed study and implementation of a variance based adaptive monte-carlo localization algorithm.</p>
-        <a href ="https://drive.google.com/file/d/1lUWaYRXgXfchTuDHWAW5DvLWny498ybV/view?usp=sharing"> <img src="icons/download_black.svg" alt="download button" class="literature-download"></a>
-      </div>
-      <div class="literature">
-        <h3 class="literature-title">03 Multi agent POMDP</h3>
-        <p  class="literature-description">The study models a multi agent transporter robot system is modelled with uncertainties as a POMDP and is simulated and solved with point based value iteration, with a simulation.</p>
-        <a href ="https://drive.google.com/file/d/1i_xWqv_iwoDHGeTFRujAYUwuZ2hAUw8y/view?usp=sharing"> <img src="icons/download_black.svg" alt="download button" class="literature-download"></a>
-      </div>
-    </article>
-  </section>
-  <section class="section" id="talk">
-    <h2 class="watermark">Talk.</h2>
-    <div class="talk-container">
-      <div class="talk-para-container">
-        <p class="talk-para">I am always looking to learn and connect with more people. As I believe there's value in every word exchanged. Drop me a message through the contacts below, See you on the other side!.</p>
-      </div>
-      <img class="talk-img" src="images/mee.jpeg">
-    </div>
-  </section>
-
-
-</main>
-
-  <footer id="footer">
-    <h1 class="footer-watermark">Contacts</h1>
-    
-    
-    
-    
-    
-    
-    <div class="footer-social-container">
-      <div class="social-item">
-        
-        <img src="icons/github-light.svg" alt="github" class="footer-social-ico">
-        <a href="https://github.com/saleeqmohammed">
-          <p class="footer-social-desc">github/saleeq</p>
-        </a>
-      </div>
-      <div class="social-item">
-        <img src="icons/linkedin-light.svg" alt="github" class="footer-social-ico">
-        <a href="https://www.linkedin.com/in/mohammedsaleeqk">
-          <p class="footer-social-desc">LinkedIn/saleeq</p>
-        </a>
-      </div>
-      <div class="social-item">
-
-        <img src="icons/youtube-light.svg" alt="github" class="footer-social-ico">
-        <a href="https://www.youtube.com/channel/UCBCfD3fC5Lfip8_Xwh0DoYA">
-        <p class="footer-social-desc">YouTube/saleeq</p>
-        </a>
-      </div>
-      <div class="social-item">
-        <img src="icons/square-x-twitter-light.svg" alt="github" class="footer-social-ico"><a href="https://twitter.com/Saleeqkolleth"><p class="footer-social-desc">twitter/saleeq</p></a>
-      </div>
-      <div class="social-item">
-        <img src="icons/square-instagram.svg" alt="github" class="footer-social-ico"><a href="https://www.instagram.com/mohammed_saleeq?igsh=MTNvMWE5dXJjYjViYw=="><p class="footer-social-desc">Instagram/saleeq</p></a>
-      </div>
-      <div class="social-item">
-        <img src="icons/gmail-light.svg" alt="github" class="footer-social-ico">
-        <a href="mailto:saleeqmohammed7@gmail.com"><img class="hero-social" src="icons/gmail-dark.svg" alt=""><p class="footer-social-desc">gmail/saleeq</p></a>
-      </div>
-    </div>
-  <hr size="0.1rem" class="footer-sep">
-<p class="footer-copyright">&copy; Developed by Saleeq and designed by <a href="https://www.hishamjaleel.tech" class="shoutout">@Hisham</p></a>
-</footer>
-</body>
-
-
-
-
+  <!-- Scripts -->
   <script src="scripts/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://unpkg.com/split-type"></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger)
-    const splitTypes =document.querySelectorAll('.watermark')
-    splitTypes.forEach((char,i)=>{
-        const text = new SplitType(char,{types:'chars'})
-        let charsForAnim = text.chars;
-        let mediaQuery = window.matchMedia('(max-width: 780px)');
-        if (mediaQuery.matches){
-
-          charsForAnim.reverse()
-          // console.log(mediaQuery.matches);
-        }
-        gsap.from(charsForAnim,{
-            scrollTrigger:{
-                trigger:char,
-                start:'top 80%',
-                end:'top 20%',
-                scrub:true,
-                markers:false
-            },
-            opacity:0,
-            stagger: 0.1
-        })
-    })
-
-const lines = document.querySelectorAll('.literature-title, .literature-description');
-
-lines.forEach((line, m) => {
-    gsap.from(line, { 
-        opacity: 0,
-        stagger: 0.1 ,
-        rotateX: 90,
-        transformOrigin: "50% 0%",
-        scrollTrigger: {
-            trigger: line, // Use line as the trigger
-            start: 'top 80%',
-            end: 'top 60%',
-            scrub:true,
-            markers: false
-        },
-        opacity:0,
-        stagger: 0.1
-    });
-});
-
-const paths = document.querySelectorAll('.line');
-
-paths.forEach((path, j) => {
-    gsap.from(path, { 
-        opacity: 0,
-        stagger: 0.1,
-        rotateX: 90,
-        transformOrigin: "50% 0%",
-        scrollTrigger: {
-            trigger: path, // Use line as the trigger
-            start: 'top 80%',
-            end: 'top 20%',
-            scrub:true,
-            markers: false
-        },
-        opacity:0,
-        stagger: 5,
-    });
-  });
-    const logos = document.querySelectorAll('.journey-logo');
-    logos.forEach((logo,k)=>{
-      gsap.from(logo,{
-        scale:0,
-        scrollTrigger: {
-                trigger: logo, 
-                start: 'top 80%',
-                end: 'top 60%',
-                scrub:true,
-                markers:false
-            },
-            stagger: 5
-            
-      });
-    });
-    
-
-
-    
-
-</script>
+</body>
 </html>
