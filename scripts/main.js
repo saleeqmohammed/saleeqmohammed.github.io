@@ -368,11 +368,13 @@ function setupMobileMenu() {
   });
 }
 
-// Quick shortcut to open Admin Studio (Ctrl+Shift+A or Cmd+Shift+A)
+// Quick shortcut to open Admin Studio on localhost (Ctrl+Shift+A or Cmd+Shift+A)
 function setupAdminShortcut() {
   window.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === 'a') {
-      window.location.href = 'admin/index.html';
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        window.location.href = 'admin/index.html';
+      }
     }
   });
 }

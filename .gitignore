@@ -1,0 +1,8 @@
+# Local Portfolio Studio CMS (Runs locally via python3 admin.py)
+admin/
+admin.py
+
+# System & Editor files
+.DS_Store
+*.swp
+__pycache__/
