@@ -212,19 +212,21 @@
     },
     {
       "id": "pomdp-transport",
-      "title": "Multi-Robot POMDP Transport System",
+      "title": "RoboConvoy: Multi-Agent POMDP Transporter System",
       "category": "Robotics & Planning",
       "featured": true,
       "stars": 4,
-      "description": "Collaborative multi-robot transportation system modeled under observation and action uncertainty as a Partially Observable Markov Decision Process (POMDP).",
+      "description": "Coordinated multi-agent autonomous robotic transport system collaboratively planning, navigating, and transporting sizable payloads across complex indoor environments under partial observability and spatial uncertainty.",
       "highlights": [
-        "Belief-space planning solved via Point-Based Value Iteration (pyPBVI) for reliable decision-making under stochastic perception.",
-        "Integrated with ROS1 Noetic and the 2D STAGE multi-robot simulator for high-throughput evaluation.",
-        "Achieved significantly higher task completion rates than conventional deterministic planners under sensor noise."
+        "Formulates collective transport as a Partially Observable Markov Decision Process (POMDP) solved in continuous belief space via Point-Based Value Iteration (PBVI).",
+        "Multi-modal Particle Filter Localization (MCL) accelerated with C++ laser ray-tracing and DBSCAN spatial clustering for robust kidnap recovery.",
+        "Composite formation abstraction: agents enclose and secure the payload, transitioning dynamically to a single kinematic entity during transit.",
+        "Validated across high-fidelity 3D Gazebo and 2D Stage multi-robot simulation environments."
       ],
-      "tags": ["ROS1 Noetic", "POMDP", "pyPBVI", "STAGE Simulator", "Belief Space", "Python"],
+      "tags": ["ROS Noetic", "POMDP", "PBVI", "Multi-Agent Planning", "Gazebo", "C++", "Python", "DBSCAN"],
       "github_url": "https://github.com/saleeqmohammed/roboconvoy",
-      "image": "images/projects/pomdp_convoy.png"
+      "pdf_url": "docs/RoboConvoy_Technical_Report.pdf",
+      "image": "images/projects/roboconvoy_3d_transport.png"
     },
     {
       "id": "ur10e-manipulation",
@@ -310,6 +312,18 @@
       "tags": ["CBS", "MPC", "Social Force", "ROS2", "Gazebo"],
       "summary": "Developed a two-level planner incorporating Social Force Models into CBS low-level search and MPC trajectory optimization to respect human personal space during multi-robot fleet coordination.",
       "code_url": "https://github.com/saleeqmohammed/human_aware_MRMP"
+    },
+    {
+      "id": "pub-roboconvoy",
+      "title": "A Robust Multi-Agent Transporter Robot System With Contextual Intelligence",
+      "authors": "Mohammed Saleeq Kolleth, Rahim Khan, Martin Muru, Mohammadali Moghimi, Alan Binu",
+      "venue": "Technical Report & Benchmark — Intelligent Robotics, University of Birmingham",
+      "status": "Technical Report",
+      "year": 2024,
+      "tags": ["POMDP", "PBVI", "Multi-Agent Transport", "MCL", "DBSCAN", "ROS"],
+      "summary": "Formulated a cooperative multi-robot payload transportation system under perceptual and environmental uncertainty using Partially Observable Markov Decision Processes solved via Point-Based Value Iteration (PBVI) with composite formation kinematic abstraction.",
+      "pdf_url": "docs/RoboConvoy_Technical_Report.pdf",
+      "code_url": "https://github.com/saleeqmohammed/roboconvoy"
     },
     {
       "id": "pub-waam",
